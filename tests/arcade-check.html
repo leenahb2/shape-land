@@ -1,0 +1,72 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Little Learners Land · arcade integration checks</title><style>body{margin:0;font:14px system-ui;background:#eae5df}nav{padding:12px;display:flex;align-items:center;gap:12px}button,select{padding:10px}#wrap{margin:12px}iframe{border:0;transform-origin:top left;background:#fffaf1}pre{white-space:pre-wrap;padding:12px;font-size:12px}#status{font-weight:bold}</style></head><body><nav><button id="run">Run preserved arcade sessions</button><label>Preview <select id="size"><option value="1920,1080">Smartboard 1920 × 1080</option><option value="1024,768">iPad landscape 1024 × 768</option><option value="768,1024">iPad portrait 768 × 1024</option><option value="844,390">Short landscape 844 × 390</option></select></label><span id="status">Ready</span></nav><div id="wrap"><iframe title="Arcade integration preview" src="/shape-land/"></iframe></div><pre id="report" role="status"></pre><script>
+const frame=document.querySelector('iframe'),wrap=document.querySelector('#wrap'),size=document.querySelector('#size'),report=document.querySelector('#report'),status=document.querySelector('#status'),run=document.querySelector('#run');
+const pause=ms=>new Promise(resolve=>setTimeout(resolve,ms));
+function resize(){const[w,h]=size.value.split(',').map(Number),scale=Math.min((innerWidth-24)/w,(innerHeight-230)/h,1);Object.assign(frame.style,{width:w+'px',height:h+'px',transform:`scale(${scale})`});Object.assign(wrap.style,{width:w*scale+'px',height:h*scale+'px'});}size.onchange=resize;window.onresize=resize;resize();
+const doc=()=>frame.contentDocument;
+function assert(test,message){if(!test)throw new Error(message);}
+async function waitFor(test,message,timeout=6500){const until=Date.now()+timeout;while(Date.now()<until){if(test())return;await pause(40);}throw new Error(message);}
+function button(text,scope=doc()){return [...scope.querySelectorAll('button')].find(b=>b.textContent.trim()===text);}
+function log(message){report.textContent+=message+'\n';}
+function layout(label){const d=doc(),w=frame.contentWindow.innerWidth,h=frame.contentWindow.innerHeight;const controls=[...d.querySelectorAll('.arc-balloon-button,.arc-egg-button,.arc-letter-button,.arc-nav button,.arc-replay,.arc-finish-actions button')];for(const el of controls){const r=el.getBoundingClientRect();assert(r.left>=-.5&&r.right<=w+.5&&r.top>=-.5&&r.bottom<=h+.5,`${label}: control outside ${w}×${h}: ${el.ariaLabel||el.textContent}`);assert(r.width>=40&&r.height>=40,`${label}: touch target too small`);if(w===1920&&el.matches('.arc-balloon-button,.arc-egg-button,.arc-letter-button'))assert(Math.min(r.width,r.height)>=100,`${label}: smartboard answer smaller than 100px`);}assert(d.documentElement.scrollWidth<=w,`${label}: horizontal overflow`);assert(d.documentElement.scrollHeight<=h,`${label}: gameplay scrolling`);}
+async function checkViewports(label){for(const viewport of ['1920,1080','1024,768','768,1024','844,390']){size.value=viewport;resize();await pause(80);layout(label);}size.value='1920,1080';resize();}
+run.onclick=async()=>{
+ run.disabled=true;report.textContent='';let saved;
+ try{
+  await new Promise(resolve=>{frame.addEventListener('load',resolve,{once:true});frame.contentWindow.location.reload();});await waitFor(()=>doc()?.querySelector('.splash-enter:not(:disabled)'),'Splash not ready');
+  saved=frame.contentWindow.localStorage.getItem('little-learners-letters');
+  doc().querySelector('.splash-enter').click();await waitFor(()=>doc().querySelector('.ll-art-letters'),'Hub did not open');
+  doc().querySelector('.ll-art-letters').closest('button').click();await waitFor(()=>button('⚙ Teacher Settings'),'English menu did not open');button('⚙ Teacher Settings').click();
+  await waitFor(()=>doc().querySelector('.ll-letter-picker'),'Settings did not open');button('Clear All').click();await pause(50);
+  assert(doc().querySelector('.ll-settings [role="alert"]'),'Empty targets not explained');
+  doc().querySelectorAll('.ll-letter-picker button').forEach(b=>{if(b.textContent==='Z')b.click()});await pause(50);
+  const difficulty=doc().querySelector('.ll-settings select');difficulty.value='medium';difficulty.dispatchEvent(new Event('change',{bubbles:true}));
+  button('Reach Mode: Off')?.click();button('Sound & voice: On')?.click();await pause(80);button('Done ✓').click();
+  const stored=JSON.parse(frame.contentWindow.localStorage.getItem('little-learners-letters'));assert(stored.letters.length===1&&stored.letters[0]==='Z'&&stored.difficulty==='medium'&&stored.reach,'Teacher preferences not saved');log('PASS: single Z target, Medium, Reach Mode, audio off saved');
+  const titles=['Flying Alphabet Balloons','Rocket to the Moon','Mystery Letter Eggs'];
+  for(const title of titles){
+   status.textContent='Testing '+title;const card=[...doc().querySelectorAll('.arc-menu-card')].find(c=>c.querySelector('h2').textContent===title);assert(card,'Missing game card '+title);card.querySelector('button').click();await waitFor(()=>doc().querySelector('.arcade'),'Game failed to start');await pause(400);
+   await checkViewports(title);
+   if(title===titles[0]){
+    button('⚙ Teacher Settings').click();await waitFor(()=>button('Speech: Off'),'Arcade audio controls missing');button('Speech: Off').click();await pause(80);
+    assert(button('♫ Replay Voice')&&!button('♫ Replay Voice').disabled,'Independent speech did not enable replay');button('♫ Replay Voice').click();button('Speech: On').click();await pause(80);button('Done ✓').click();await pause(80);
+    assert(button('♫ Replay Instruction').disabled,'Speech off did not disable replay');log('PASS: independent speech on/off and teacher voice replay');
+   }
+   const total=Number(doc().querySelector('[role="progressbar"]').getAttribute('aria-valuemax'));
+   function choices(){return [...doc().querySelectorAll('.arc-balloon-button,.arc-egg-button,.arc-letter-button')];}
+   function target(){return doc().querySelector('.arc-instructions h1').textContent.includes('lowercase')?'z':'Z';}
+   const wrong=choices().find(b=>!(b.ariaLabel||b.textContent).trim().endsWith(target()));assert(wrong,'No distractor');wrong.click();await pause(80);
+   assert(doc().querySelector('[role="progressbar"]').getAttribute('aria-valuenow')==='0','Wrong answer advanced');assert(!doc().querySelector('.arc-popped,.arc-hatched,.arc-filled'),'Wrong answer triggered success scene');log('PASS: '+title+' wrong-answer retry and all four viewports');
+   for(let round=0;round<total;round++){
+    const correct=choices().find(b=>(b.ariaLabel||b.textContent).trim().endsWith(target()));assert(correct,'Correct selected target missing');correct.click();await pause(100);
+    assert(Number(doc().querySelector('[role="progressbar"]').getAttribute('aria-valuenow'))===round+1,'Correct answer failed to progress');
+    assert(choices().every(b=>b.disabled),'Answers not locked during reward');
+    await waitFor(()=>round===total-1?doc().querySelector('.arc-done'):doc().querySelector('.arcade:not(.arc-reward)'),'Round failed to complete',5500);
+   }
+   await pause(100);await checkViewports(title+' completion');assert(button('Play Again ↻')&&button('Back to Games →'),'Completion actions missing');log('PASS: '+title+' full '+total+' rounds, completion animation, and finish layout');
+   button('Play Again ↻').click();await waitFor(()=>doc().querySelector('.arc-instructions'),'Play Again did not restart');assert(doc().querySelector('[role="progressbar"]').getAttribute('aria-valuenow')==='0','Restart retained progress');
+   button('⚙ Teacher Settings').click();await waitFor(()=>button('Restart Game'),'In-game settings missing');button('Restart Game').click();await pause(100);assert(doc().querySelector('[role="progressbar"]').getAttribute('aria-valuenow')==='0','Teacher restart failed');
+   button('← Games').click();await waitFor(()=>doc().querySelector('.arc-menu-card'),'Back to Games failed');log('PASS: '+title+' Play Again, teacher restart, and Back navigation');
+  }
+  for(const title of ['Letter Detective']){
+   const card=[...doc().querySelectorAll('.ll-game-card')].find(c=>c.querySelector('h2').textContent===title);card.querySelector('button').click();await waitFor(()=>doc().querySelector('.ll-answer'),'Classic game failed to start');
+   const expected=title==='Letter Detective'?'Letter Z':title==='Big & Small Letters'?'Lowercase z':'Zebra';
+   const choices=[...doc().querySelectorAll('.ll-answer')],correct=choices.find(b=>b.ariaLabel===expected),wrong=choices.find(b=>b!==correct);assert(correct,'Classic correct answer missing');wrong.click();await pause(50);assert(doc().querySelector('[role="progressbar"]').getAttribute('aria-valuenow')==='0','Classic wrong answer advanced');correct.click();await pause(50);assert(doc().querySelector('[role="progressbar"]').getAttribute('aria-valuenow')==='1','Classic correct answer failed');button('← Games').click();await waitFor(()=>doc().querySelector('.arc-menu-card'),'Classic back navigation failed');log('PASS: '+title+' correct/incorrect answers and Back navigation');
+  }
+  button('⌂ Home').click();await waitFor(()=>doc().querySelector('.ll-art-shapes'),'Shapes hub link missing');doc().querySelector('.ll-art-shapes').closest('button').click();await waitFor(()=>doc().querySelector('.game-cards'),'Original Shapes menu missing');
+  const quiet=doc().querySelector('.quiet');if(quiet.textContent.includes('on'))quiet.click();
+  for(const title of ['Shape Detective','Hungry Monsters','Shape Shadows']){
+   const card=[...doc().querySelectorAll('.game-card')].find(c=>c.querySelector('h2').textContent===title);card.querySelector('button').click();await waitFor(()=>doc().querySelector('.shape-tile'),'Shape game failed to open');
+   if(title==='Shape Detective'){
+    const target=doc().querySelector('.instruction h1').textContent.match(/Find the (.+)!/)[1].toLowerCase();const correct=[...doc().querySelectorAll('.shape-tile')].find(b=>b.ariaLabel.toLowerCase()==='select '+target);assert(correct,'Shape target missing');correct.click();
+   }else{
+    const tile=doc().querySelector('.shape-tile'),name=tile.ariaLabel.replace('Select ','').toLowerCase();tile.click();await pause(40);doc().querySelector('[data-drop="'+name+'"]').click();
+   }
+   await pause(50);assert(doc().querySelector('.feedback.happy'),'Original shape reward failed');button('← Adventures').click();await waitFor(()=>doc().querySelector('.game-cards'),'Shape Back navigation failed');log('PASS: '+title+' original answer interaction and reward');
+  }
+  button('⌂ Home').click();await waitFor(()=>doc().querySelector('.ll-art-letters'),'Hub return failed');doc().querySelector('.ll-art-letters').closest('button').click();await waitFor(()=>doc().querySelector('.arc-menu-card'),'English return failed');
+  button('⚙ Teacher Settings').click();await waitFor(()=>button('Clear All'),'Settings missing');button('Clear All').click();await pause(50);button('Done ✓').click();assert([...doc().querySelectorAll('.ll-game-cards button')].every(b=>b.disabled),'Empty selection allowed start');
+  button('⌂ Home').click();await waitFor(()=>doc().querySelector('.ll-categories'),'Home failed');log('PASS: empty selection disables all available games; Home works');status.textContent='All arcade integration checks passed';
+ }catch(error){status.textContent='FAILED';log('FAIL: '+error.message);console.error(error);}
+ finally{if(saved!==undefined){if(saved===null)frame.contentWindow.localStorage.removeItem('little-learners-letters');else frame.contentWindow.localStorage.setItem('little-learners-letters',saved);}run.disabled=false;}
+};
+</script></body></html>

@@ -1,0 +1,7 @@
+Browser tab: 25, Title: "Colors arcade checks", URL: "http://127.0.0.1:5173/shape-land/tests/colors-check.html".
+There has been no change in the accessibility tree.
+The focused UI element is 17 AXWebArea Little Learners Land — Play • Learn • Explore, URL: 127.0.0.1:5173/shape-land/
+
+Browser tab: 27, Title: "Colors resize interaction checks", URL: "http://127.0.0.1:5173/shape-land/tests/colors-layout-check.html".
+There has been no change in the accessibility tree.
+The focused UI element is 16 AXWebArea Little Learners Land — Play • Learn • Explore, URL: 127.0.0.1:5173/shape-land/

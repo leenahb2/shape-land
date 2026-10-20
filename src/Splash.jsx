@@ -1,3 +1,4 @@
+import {Credit} from './shared/AppBar';
 import React, { useEffect, useRef, useState } from 'react';
 import Shape from './Shape';
 
@@ -22,7 +23,7 @@ export default function Splash({ onEnter }) {
   }
 
   return (
-    <main className={`splash ${leaving ? 'splash-leaving' : ''}`}>
+    <main className={`splash ${leaving ? 'splash-leaving' : ''}`}><Credit/>
       <div className="splash-dots" aria-hidden="true" />
       <div className="splash-content">
         <div className="splash-kicker">A LITTLE WORLD OF WONDER</div>
@@ -36,16 +37,12 @@ export default function Splash({ onEnter }) {
           <span className="parade-spark spark-left">✦</span>
           <span className="parade-spark spark-right">✧</span>
         </div>
-        <h1 className="splash-title"><span>Shape</span> <span>Land</span><b>!</b></h1>
-        <p className="splash-subtitle">A Magical Shape Adventure</p>
-        <div className="splash-signature">
-          <span className="signature-heart" aria-hidden="true">♥</span>
-          <span>Made with love by <strong>Ms. Leena</strong></span>
-        </div>
+        <h1 className="splash-title"><span>Little Learners</span> <span>Land</span><b>!</b></h1>
+        <p className="splash-subtitle">Play • Learn • Explore</p>
         <button className="splash-enter" ref={start} onClick={enter} disabled={leaving}>
-          Let’s explore! <span aria-hidden="true">→</span>
+          Play! <span aria-hidden="true">→</span>
         </button>
-        <p className="splash-note">Little shapes. Big imaginations.</p>
+        <p className="splash-note">Little learners. Big imaginations.</p>
       </div>
       <div className="splash-ground" aria-hidden="true" />
     </main>

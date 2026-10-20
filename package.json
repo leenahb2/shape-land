@@ -1,1 +1,20 @@
-{"name":"shape-land","version":"1.0.0","private":true,"type":"module","scripts":{"dev":"vite --host 0.0.0.0","build":"vite build","preview":"vite preview --host 0.0.0.0","test":"node --test src/rounds.test.js"},"dependencies":{"react":"^19.1.0","react-dom":"^19.1.0"},"devDependencies":{"@vitejs/plugin-react":"^5.2.0","vite":"^7.0.0"}}
+{
+  "name": "shape-land",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "vite build",
+    "preview": "vite preview --host 0.0.0.0",
+    "test": "node --test src/rounds.test.js src/letters/data/letters.test.js src/letters/narration.test.js src/letters/arcade/arcade.test.js src/letters/interactive/interactive.test.js src/arabic/arabic.test.js src/numbers/numbers.test.js src/colors/colors.test.js src/concepts/concepts.test.js"
+  },
+  "dependencies": {
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^5.2.0",
+    "vite": "^7.0.0"
+  }
+}

@@ -1,0 +1,2 @@
+import {useEffect,useState} from 'react';
+export default function useColorMotion(setting){const[system,setSystem]=useState(()=>window.matchMedia('(prefers-reduced-motion: reduce)').matches);useEffect(()=>{const media=window.matchMedia('(prefers-reduced-motion: reduce)'),change=()=>setSystem(media.matches);media.addEventListener?.('change',change);return()=>media.removeEventListener?.('change',change);},[]);return setting||system;}

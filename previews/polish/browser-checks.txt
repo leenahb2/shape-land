@@ -1,0 +1,168 @@
+PASS: Splash: single exact top credit
+PASS: shapes menu seven viewport checks
+PASS: shapes settings seven viewport checks
+PASS: Shape Detective seven viewport checks
+PASS: Hungry Monsters seven viewport checks
+PASS: Shape Shadows seven viewport checks
+PASS: letters menu seven viewport checks
+PASS: letters settings seven viewport checks
+PASS: Letter Detective seven viewport checks
+PASS: Big & Small Matching seven viewport checks
+PASS: Letter & Picture Sorting seven viewport checks
+PASS: Flying Alphabet Balloons seven viewport checks
+PASS: Rocket to the Moon seven viewport checks
+PASS: Mystery Letter Eggs seven viewport checks
+PASS: Letter Collector seven viewport checks
+PASS: letters: unavailable game remains guarded
+PASS: numbers menu seven viewport checks
+PASS: numbers settings seven viewport checks
+PASS: Feed the Hungry Dino seven viewport checks
+PASS: Build the Number Tower seven viewport checks
+PASS: Magic Number Garden seven viewport checks
+PASS: Number Fishing Adventure seven viewport checks
+PASS: colors menu seven viewport checks
+PASS: colors settings seven viewport checks
+PASS: Magic Color Lab seven viewport checks
+PASS: Rainbow Factory seven viewport checks
+PASS: Paint the Magic World seven viewport checks
+PASS: Color Rescue Car Wash seven viewport checks
+PASS: Rainbow Bridge seven viewport checks
+PASS: concepts menu seven viewport checks
+PASS: concepts settings seven viewport checks
+PASS: The Three Bears’ House seven viewport checks
+PASS: Grow the Magic Garden seven viewport checks
+PASS: Super Sorting Factory seven viewport checks
+PASS: My Family House seven viewport checks
+PASS: Same or Different? seven viewport checks
+PASS: arabic menu seven viewport checks
+PASS: arabic settings seven viewport checks
+PASS: صائد الحروف seven viewport checks
+PASS: وصّل الحرف بالصورة seven viewport checks
+PASS: صندوق الحروف السحري seven viewport checks
+PASS: أبواب المفاجآت seven viewport checks
+PASS: Magic Letter Tracing seven viewport checks
+PASS: Tracing curriculum restored; default-color reset requires confirmation; Cancel preserves choices
+
+
+English
+PASS: Train removed; selected A B C S T, Medium, mixed case, Reach Mode
+PASS: Collector teacher restart
+PASS: Collector bounds at five viewports
+PASS: Collector rejects wrong/outside/cancelled drops
+PASS: Collector full 5 rounds, drag + tap, exact counts and completion
+PASS: Matching teacher restart
+PASS: Matching bounds at five viewports
+PASS: Matching rejects wrong/cancelled connections
+PASS: Connected line resize bounds at five viewports
+PASS: Matching full 4 sets, real pointer lines, tap alternative and completion
+PASS: Picture sorting teacher restart
+PASS: Picture sorting bounds at five viewports
+PASS: Picture sorting rejects wrong and cancelled drops
+PASS: Picture sorting full 5 rounds, illustrated objects and completion
+PASS: Tracing teacher restart
+PASS: Tracing bounds at five viewports
+PASS: Tracing rejects endpoint taps/teleports; demonstration and cancellation award no completion
+PASS: Tracing completed all ordered strokes for A B C S T, with pen lifts and Next
+PASS: Moving balloons bounds at five viewports
+PASS: Balloon hitboxes travel, stay in bounds, pause/resume, freeze on touch, and cancel safely
+PASS: Z stays playable elsewhere, one-pair matching works, X final-sound question is explicit
+PASS: Home and retained hub navigation
+
+
+Numbers
+PASS: Numbers activated, unified four-card menu, Colors also active
+PASS: dino seven viewport bounds and touch targets
+PASS: dino rejects outside/cancelled/secondary pointer and wrong zero input
+PASS: dino all five rounds, exact quantities including zero, duplicate/overcount protection, drag and tap
+PASS: dino quantity 10 seven viewport bounds and touch targets
+PASS: dino rejects outside/cancelled/secondary pointer and wrong zero input
+PASS: dino ten-object round completed
+PASS: garden seven viewport bounds and touch targets
+PASS: garden rejects outside/cancelled/secondary pointer and wrong zero input
+PASS: garden all five rounds, exact quantities including zero, duplicate/overcount protection, drag and tap
+PASS: garden quantity 10 seven viewport bounds and touch targets
+PASS: garden rejects outside/cancelled/secondary pointer and wrong zero input
+PASS: garden ten-object round completed
+PASS: Tower up to ten blocks seven viewport bounds and touch targets
+PASS: Tower three full sequences, missing-number challenge, wrong/cancel protection and fixed reachable slot
+PASS: Tower subset validation and single-number support
+PASS: Fishing seven viewport bounds and touch targets
+PASS: Fish movement, pause/resume, wrong/outside/cancelled hook validated
+PASS: Fishing six full rounds, controlled moving hook, tap-to-move + separate lift, catches and bucket finale
+PASS: Empty selection guard, explicit zero action, teacher restart, Games and Home
+
+
+Arabic
+PASS: Arabic hub card, All six categories active
+PASS: Hunt six viewport bounds, credit, RTL and target sizes
+PASS: Hunt all five rounds, repeated targets and wrong answers
+PASS: Box six viewport bounds, credit, RTL and target sizes
+PASS: Box rejects wrong/outside/cancelled drops
+PASS: Box all five rounds, drag, tap alternative and surprise
+PASS: Matching six viewport bounds, credit, RTL and target sizes
+PASS: Matching rejects wrong and cancelled lines
+PASS: Permanent matching lines six viewport bounds, credit, RTL and target sizes
+PASS: Matching four complete sets, pointer and tap connections
+PASS: Doors six viewport bounds, credit, RTL and target sizes
+PASS: Doors eight complete rounds, wrong doors closed, animated reveals
+PASS: Empty selection guarded, standalone ه, single-pair matching
+PASS: All four complete Arabic sessions remained silent despite enabled legacy preferences; audio controls absent
+PASS: Restart and Home
+
+
+Colors
+PASS: Colors activated; five themed games; all six categories active
+PASS: Color Lab seven viewport bounds, full scene and no gameplay scroll
+PASS: Lab rejects outside/cancel/wrong recipes; Try Again empties mixture
+PASS: Lab five correct recipe rounds, real pours, tap option and duplicate protection
+PASS: Factory with five bins and ten toys seven viewport bounds, full scene and no gameplay scroll
+PASS: Factory movement, pause/resume and wrong/outside/cancel sorting
+PASS: Factory three complete ten-toy sets, matching bins, drag/tap and prize
+PASS: Painting with six-color palette seven viewport bounds, full scene and no gameplay scroll
+PASS: Painting checks both color and region; cancel/reset preserve progress
+PASS: Three fully colored SVG scenes: twelve region/color tasks using brush and tap
+PASS: Car wash scrub phase seven viewport bounds, full scene and no gameplay scroll
+PASS: Car wash paint phase seven viewport bounds, full scene and no gameplay scroll
+PASS: Three vehicles: real scrub coverage, twelve-tap alternative, correct paint and drive-away
+PASS: Rainbow bridge seven viewport bounds, full scene and no gameplay scroll
+PASS: Three six-color bridges: ordered construction, drag/tap, wrong/cancel and crossing
+PASS: Teacher subsets, empty selection, unsupported recipes and restart
+
+
+Concepts
+PASS: Sixth category integrated; Arabic last; five unified game cards
+PASS: Bear house seven viewports: visible controls, no gameplay scrolling and mapped lines
+PASS: One-pointer resize bonus seven viewports: visible controls, no gameplay scrolling and mapped lines
+PASS: Six paired-size rounds and real slider bonus; wrong/outside/cancel guarded
+PASS: Growing garden seven viewports: visible controls, no gameplay scrolling and mapped lines
+PASS: Flowers, trees and towers grow in multiple actions; hold-to-water and taller comparison
+PASS: Factory with eight objects and four groups seven viewports: visible controls, no gameplay scrolling and mapped lines
+PASS: All four classification rules: colors, shapes, sizes and object categories; moving/frozen belt
+PASS: Mystery windows with six family members seven viewports: visible controls, no gameplay scrolling and mapped lines
+PASS: Family portrait construction seven viewports: visible controls, no gameplay scrolling and mapped lines
+PASS: All six mystery windows, spoken-text introductions and six matching portraits
+PASS: Different picture search seven viewports: visible controls, no gameplay scrolling and mapped lines
+PASS: Same-picture connection board seven viewports: visible controls, no gameplay scrolling and mapped lines
+PASS: Permanent connecting line after resize seven viewports: visible controls, no gameplay scrolling and mapped lines
+PASS: Four explicit differences and four real pointer/tap connections, resize-aligned lines
+PASS: Concept toggles, empty curriculum, restart and Home
+
+
+PASS: Splash seven viewport bounds and top copyright
+PASS: Learning Hub seven viewport bounds and top copyright
+PASS: Shapes menu seven viewport bounds and top copyright
+PASS: Shape Detective seven viewport bounds and top copyright
+PASS: Hungry Monsters seven viewport bounds and top copyright
+PASS: Shape Shadows seven viewport bounds and top copyright
+PASS: English menu seven viewport bounds and top copyright
+PASS: Letter Detective seven viewport bounds and top copyright
+PASS: Big & Small Matching seven viewport bounds and top copyright
+PASS: Letter & Picture Sorting seven viewport bounds and top copyright
+PASS: Flying Alphabet Balloons seven viewport bounds and top copyright
+PASS: Rocket to the Moon seven viewport bounds and top copyright
+PASS: Mystery Letter Eggs seven viewport bounds and top copyright
+PASS: Letter Collector seven viewport bounds and top copyright
+PASS: Arabic menu seven viewport bounds and top copyright
+
+
+Native mouse: clicking the Color Lab illustration area opens its game after the stretched hit-area hover fix.

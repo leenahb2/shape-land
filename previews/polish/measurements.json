@@ -1,0 +1,356 @@
+{
+  "before": [
+    {
+      "id": "shapes",
+      "cards": [
+        {
+          "height": 409,
+          "title": "Shape Detective",
+          "width": 372
+        },
+        {
+          "height": 409,
+          "title": "Hungry Monsters",
+          "width": 372
+        },
+        {
+          "height": 409,
+          "title": "Shape Shadows",
+          "width": 372
+        }
+      ]
+    },
+    {
+      "id": "letters",
+      "cards": [
+        {
+          "height": 405,
+          "title": "Letter Detective",
+          "width": 372
+        },
+        {
+          "height": 405,
+          "title": "Big & Small Matching",
+          "width": 372
+        },
+        {
+          "height": 405,
+          "title": "Letter & Picture Sorting",
+          "width": 372
+        },
+        {
+          "height": 405,
+          "title": "Flying Alphabet Balloons",
+          "width": 372
+        },
+        {
+          "height": 405,
+          "title": "Rocket to the Moon",
+          "width": 372
+        },
+        {
+          "height": 405,
+          "title": "Mystery Letter Eggs",
+          "width": 372
+        },
+        {
+          "height": 443,
+          "title": "Letter Collector",
+          "width": 372
+        },
+        {
+          "height": 443,
+          "title": "Magic Letter Tracing",
+          "width": 372
+        }
+      ]
+    },
+    {
+      "id": "numbers",
+      "cards": [
+        {
+          "height": 460,
+          "title": "Feed the Hungry Dino",
+          "width": 372
+        },
+        {
+          "height": 460,
+          "title": "Build the Number Tower",
+          "width": 372
+        },
+        {
+          "height": 460,
+          "title": "Magic Number Garden",
+          "width": 372
+        },
+        {
+          "height": 441,
+          "title": "Number Fishing Adventure",
+          "width": 372
+        }
+      ]
+    },
+    {
+      "id": "colors",
+      "cards": [
+        {
+          "height": 460,
+          "title": "Magic Color Lab",
+          "width": 372
+        },
+        {
+          "height": 460,
+          "title": "Rainbow Factory",
+          "width": 372
+        },
+        {
+          "height": 460,
+          "title": "Paint the Magic World",
+          "width": 372
+        },
+        {
+          "height": 460,
+          "title": "Color Rescue Car Wash",
+          "width": 372
+        },
+        {
+          "height": 460,
+          "title": "Rainbow Bridge",
+          "width": 372
+        }
+      ]
+    },
+    {
+      "id": "concepts",
+      "cards": [
+        {
+          "height": 404,
+          "title": "The Three Bears’ House",
+          "width": 372
+        },
+        {
+          "height": 404,
+          "title": "Grow the Magic Garden",
+          "width": 372
+        },
+        {
+          "height": 404,
+          "title": "Super Sorting Factory",
+          "width": 372
+        },
+        {
+          "height": 405,
+          "title": "My Family House",
+          "width": 372
+        },
+        {
+          "height": 405,
+          "title": "Same or Different?",
+          "width": 372
+        }
+      ]
+    },
+    {
+      "id": "arabic",
+      "cards": [
+        {
+          "height": 418,
+          "title": "صائد الحروف",
+          "width": 372
+        },
+        {
+          "height": 418,
+          "title": "وصّل الحرف بالصورة",
+          "width": 372
+        },
+        {
+          "height": 418,
+          "title": "صندوق الحروف السحري",
+          "width": 372
+        },
+        {
+          "height": 418,
+          "title": "أبواب المفاجآت",
+          "width": 372
+        }
+      ]
+    }
+  ],
+  "after": [
+    {
+      "id": "shapes",
+      "cards": [
+        {
+          "height": 374,
+          "title": "Shape Detective",
+          "width": 374
+        },
+        {
+          "height": 374,
+          "title": "Hungry Monsters",
+          "width": 374
+        },
+        {
+          "height": 374,
+          "title": "Shape Shadows",
+          "width": 374
+        }
+      ]
+    },
+    {
+      "id": "numbers",
+      "cards": [
+        {
+          "height": 374,
+          "title": "Feed the Hungry Dino",
+          "width": 374
+        },
+        {
+          "height": 374,
+          "title": "Build the Number Tower",
+          "width": 374
+        },
+        {
+          "height": 374,
+          "title": "Magic Number Garden",
+          "width": 374
+        },
+        {
+          "height": 374,
+          "title": "Number Fishing Adventure",
+          "width": 374
+        }
+      ]
+    },
+    {
+      "id": "colors",
+      "cards": [
+        {
+          "height": 374,
+          "title": "Magic Color Lab",
+          "width": 374
+        },
+        {
+          "height": 374,
+          "title": "Rainbow Factory",
+          "width": 374
+        },
+        {
+          "height": 374,
+          "title": "Paint the Magic World",
+          "width": 374
+        },
+        {
+          "height": 374,
+          "title": "Color Rescue Car Wash",
+          "width": 374
+        },
+        {
+          "height": 374,
+          "title": "Rainbow Bridge",
+          "width": 374
+        }
+      ]
+    },
+    {
+      "id": "concepts",
+      "cards": [
+        {
+          "height": 374,
+          "title": "The Three Bears’ House",
+          "width": 374
+        },
+        {
+          "height": 374,
+          "title": "Grow the Magic Garden",
+          "width": 374
+        },
+        {
+          "height": 374,
+          "title": "Super Sorting Factory",
+          "width": 374
+        },
+        {
+          "height": 374,
+          "title": "My Family House",
+          "width": 374
+        },
+        {
+          "height": 374,
+          "title": "Same or Different?",
+          "width": 374
+        }
+      ]
+    },
+    {
+      "id": "arabic",
+      "cards": [
+        {
+          "height": 374,
+          "title": "صائد الحروف",
+          "width": 374
+        },
+        {
+          "height": 374,
+          "title": "وصّل الحرف بالصورة",
+          "width": 374
+        },
+        {
+          "height": 374,
+          "title": "صندوق الحروف السحري",
+          "width": 374
+        },
+        {
+          "height": 374,
+          "title": "أبواب المفاجآت",
+          "width": 374
+        }
+      ]
+    },
+    {
+      "id": "letters",
+      "cards": [
+        {
+          "height": 374,
+          "title": "Letter Detective",
+          "width": 374
+        },
+        {
+          "height": 374,
+          "title": "Big & Small Matching",
+          "width": 374
+        },
+        {
+          "height": 374,
+          "title": "Letter & Picture Sorting",
+          "width": 374
+        },
+        {
+          "height": 374,
+          "title": "Flying Alphabet Balloons",
+          "width": 374
+        },
+        {
+          "height": 374,
+          "title": "Rocket to the Moon",
+          "width": 374
+        },
+        {
+          "height": 374,
+          "title": "Mystery Letter Eggs",
+          "width": 374
+        },
+        {
+          "height": 374,
+          "title": "Letter Collector",
+          "width": 374
+        },
+        {
+          "height": 374,
+          "title": "Magic Letter Tracing",
+          "width": 374
+        }
+      ]
+    }
+  ]
+}

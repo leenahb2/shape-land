@@ -1,0 +1,9 @@
+import {useEffect,useRef,useState} from 'react';
+import {rounds,instruction} from './model';
+import ConceptAudio from './ConceptAudio';
+export default function useConceptSession(type,settings,paused){const[deck]=useState(()=>rounds(type,settings)),[index,setIndex]=useState(0),[reward,setReward]=useState(false),[message,setMessage]=useState(''),[override,setOverride]=useState('');const latest=useRef(settings);latest.current=settings;const ref=useRef();if(!ref.current)ref.current=new ConceptAudio(()=>latest.current);const audio=ref.current,locked=useRef(false),done=index>=deck.length,q=deck[index],phrase=done?'You are a wonderful explorer!':override||instruction(type,q),text=useRef(phrase);text.current=phrase;
+ useEffect(()=>{locked.current=false;setReward(false);setMessage('');setOverride('');if(!paused)audio.instruction(done?'You are a wonderful explorer!':instruction(type,q));},[index]);
+ useEffect(()=>{audio.stop();if(!paused&&!reward)audio.instruction(text.current);},[paused,settings.voice]);
+ useEffect(()=>{if(!reward||paused)return;const timer=setTimeout(()=>{setReward(false);setIndex(i=>i+1);},3000);return()=>clearTimeout(timer);},[reward,paused]);useEffect(()=>()=>audio.dispose(),[]);
+ const canPlay=()=>!paused&&!reward&&!done&&!locked.current;return {q,index,total:deck.length,done,reward,paused,settings,phrase,message,audio,canPlay,replay:()=>audio.instruction(text.current),announce(t,delay=0){text.current=t;setOverride(t);if(delay){audio.stop();audio.unlock();audio.effect(type);audio.later(()=>audio.say(t),delay);}else audio.instruction(t);},partial(t){if(canPlay()){setMessage(t);audio.cue(type,t);}},wrong(t='Try again. Take your time!'){if(canPlay()){setMessage(t);audio.instruction(t);}},complete(message){if(!canPlay())return;locked.current=true;setReward(true);setMessage('You did it! Look what you discovered!');audio.reward(type,message);}};
+}

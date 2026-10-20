@@ -1,0 +1,51 @@
+FULL CONCEPT SESSIONS
+PASS: Sixth category integrated; Arabic last; five unified game cards
+PASS: Bear house seven viewports: visible controls, no gameplay scrolling and mapped lines
+PASS: One-pointer resize bonus seven viewports: visible controls, no gameplay scrolling and mapped lines
+PASS: Six paired-size rounds and real slider bonus; wrong/outside/cancel guarded
+PASS: Growing garden seven viewports: visible controls, no gameplay scrolling and mapped lines
+PASS: Flowers, trees and towers grow in multiple actions; hold-to-water and taller comparison
+PASS: Factory with eight objects and four groups seven viewports: visible controls, no gameplay scrolling and mapped lines
+PASS: All four classification rules: colors, shapes, sizes and object categories; moving/frozen belt
+PASS: Mystery windows with six family members seven viewports: visible controls, no gameplay scrolling and mapped lines
+PASS: Family portrait construction seven viewports: visible controls, no gameplay scrolling and mapped lines
+PASS: All six mystery windows, spoken-text introductions and six matching portraits
+PASS: Different picture search seven viewports: visible controls, no gameplay scrolling and mapped lines
+PASS: Same-picture connection board seven viewports: visible controls, no gameplay scrolling and mapped lines
+PASS: Permanent connecting line after resize seven viewports: visible controls, no gameplay scrolling and mapped lines
+PASS: Four explicit differences and four real pointer/tap connections, resize-aligned lines
+PASS: Concept toggles, empty curriculum, restart and Home
+
+RESIZED INTERACTIONS
+PASS: 1920,1080: bear/factory mapped drops, sustained/cancelled watering, window opening and difference discovery
+PASS: 1366,768: bear/factory mapped drops, sustained/cancelled watering, window opening and difference discovery
+PASS: 1024,768: bear/factory mapped drops, sustained/cancelled watering, window opening and difference discovery
+PASS: 820,1180: bear/factory mapped drops, sustained/cancelled watering, window opening and difference discovery
+PASS: 844,390: bear/factory mapped drops, sustained/cancelled watering, window opening and difference discovery
+PASS: 390,844: bear/factory mapped drops, sustained/cancelled watering, window opening and difference discovery
+PASS: 320,568: bear/factory mapped drops, sustained/cancelled watering, window opening and difference discovery
+
+ARABIC SILENCE REGRESSION
+PASS: Arabic hub card, All six categories active
+PASS: Hunt six viewport bounds, credit, RTL and target sizes
+PASS: Hunt all five rounds, repeated targets and wrong answers
+PASS: Box six viewport bounds, credit, RTL and target sizes
+PASS: Box rejects wrong/outside/cancelled drops
+PASS: Box all five rounds, drag, tap alternative and surprise
+PASS: Matching six viewport bounds, credit, RTL and target sizes
+PASS: Matching rejects wrong and cancelled lines
+PASS: Permanent matching lines six viewport bounds, credit, RTL and target sizes
+PASS: Matching four complete sets, pointer and tap connections
+PASS: Doors six viewport bounds, credit, RTL and target sizes
+PASS: Doors eight complete rounds, wrong doors closed, animated reveals
+PASS: Empty selection guarded, standalone ه, single-pair matching
+PASS: All four complete Arabic sessions remained silent despite enabled legacy preferences; audio controls absent
+PASS: Restart and Home
+
+FINAL CONNECTION REGRESSION
+PASS: Sixth category integrated; Arabic last; five unified game cards
+PASS: Different picture search seven viewports: visible controls, no gameplay scrolling and mapped lines
+PASS: Same-picture connection board seven viewports: visible controls, no gameplay scrolling and mapped lines
+PASS: Permanent connecting line after resize seven viewports: visible controls, no gameplay scrolling and mapped lines
+PASS: Four explicit differences and four real pointer/tap connections, resize-aligned lines
+PASS: Concept toggles, empty curriculum, restart and Home
