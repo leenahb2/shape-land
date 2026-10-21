@@ -17,3 +17,6 @@
 .world-directory .ar-learning-card h2{font-family:Tajawal,Tahoma,Arial,sans-serif;letter-spacing:0;line-height:1.5}
 .ar-learning-card{font-family:Tajawal,Tahoma,Arial,sans-serif}
 @media(max-width:600px){.learning-group>h2{font-size:18px}}
+/* Arabic category cards on the learning hub only. */
+.world-directory .learning-group-ar>.ll-categories{direction:rtl}
+.world-directory .learning-group-ar .ar-learning-card{text-align:right}
