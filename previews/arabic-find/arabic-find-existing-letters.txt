@@ -1,0 +1,15 @@
+PASS: Arabic hub card, All six categories active
+PASS: Hunt six viewport bounds, credit, RTL and target sizes
+PASS: Hunt all five rounds, repeated targets and wrong answers
+PASS: Box six viewport bounds, credit, RTL and target sizes
+PASS: Box rejects wrong/outside/cancelled drops
+PASS: Box all five rounds, drag, tap alternative and surprise
+PASS: Matching six viewport bounds, credit, RTL and target sizes
+PASS: Matching rejects wrong and cancelled lines
+PASS: Permanent matching lines six viewport bounds, credit, RTL and target sizes
+PASS: Matching four complete sets, pointer and tap connections
+PASS: Doors six viewport bounds, credit, RTL and target sizes
+PASS: Doors eight complete rounds, wrong doors closed, animated reveals
+PASS: Empty selection guarded, standalone ه, single-pair matching
+PASS: All four complete Arabic sessions remained silent despite enabled legacy preferences; audio controls absent
+PASS: Restart and Home

@@ -1,0 +1,25 @@
+simple: 20 move events -> 1 requested animation frames, 0 cancelled
+PASS: simple one queued frame per input burst
+PASS: simple drag-start callback fires exactly once
+PASS: simple latest pointer position rendered
+PASS: simple resize safely cancels the current gesture
+PASS: simple resized gesture cannot score on release
+PASS: simple pointercancel clears ghost
+PASS: simple outside release cannot score
+PASS: simple secondary touch ignored
+PASS: simple fresh valid drag scores exactly once
+PASS: simple fresh tap immediately after drag is accepted
+PASS: simple unmount cancels animation frame
+PASS: simple unmount explicitly releases pointer capture
+color: 20 move events -> 1 requested animation frames, 0 cancelled
+PASS: color one queued frame per input burst
+PASS: color latest pointer position rendered
+PASS: color resize safely cancels the current gesture
+PASS: color resized gesture cannot score on release
+PASS: color pointercancel clears ghost
+PASS: color outside release cannot score
+PASS: color secondary touch ignored
+PASS: color fresh valid drag scores exactly once
+PASS: color fresh tap immediately after drag is accepted
+PASS: color unmount cancels animation frame
+PASS: color unmount explicitly releases pointer capture

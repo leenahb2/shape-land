@@ -1,0 +1,10 @@
+PASS: أوجد الحرف seven viewport bounds, original Detective sizing, credit and RTL
+PASS: أوجد الحرف completion seven viewport bounds, original Detective sizing, credit and RTL
+PASS: أوجد الحرف single target, 10 rounds, wrong/correct/rapid taps, settings pause, replay, clear guard, four mixed-target rounds, mute/no speech
+PASS: أوجد الشكل seven viewport bounds, original Detective sizing, credit and RTL
+PASS: أوجد الشكل completion seven viewport bounds, original Detective sizing, credit and RTL
+PASS: أوجد الشكل single target, 10 rounds, wrong/correct/rapid taps, settings pause, replay, clear guard, four mixed-target rounds, mute/no speech
+PASS: أوجد اللون seven viewport bounds, original Detective sizing, credit and RTL
+PASS: أوجد اللون completion seven viewport bounds, original Detective sizing, credit and RTL
+PASS: أوجد اللون single target, 10 rounds, wrong/correct/rapid taps, settings pause, replay, clear guard, four mixed-target rounds, mute/no speech
+PASS: Independent Arabic targets persist after refresh; English preferences unchanged; no spoken clips or utterances

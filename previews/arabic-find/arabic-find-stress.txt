@@ -1,0 +1,19 @@
+PASS: Hub resource baseline {"frames":0,"timers":0,"observers":0,"resize":0,"keys":0,"media":0}
+PASS: Cycle 1 shapes: every game opens, settings resume, Back/Home and resource baseline restored
+PASS: Cycle 1 letters: every game opens, settings resume, Back/Home and resource baseline restored
+PASS: Cycle 1 numbers: every game opens, settings resume, Back/Home and resource baseline restored
+PASS: Cycle 1 colors: every game opens, settings resume, Back/Home and resource baseline restored
+PASS: Cycle 1 concepts: every game opens, settings resume, Back/Home and resource baseline restored
+PASS: Cycle 1 arabic: every game opens, settings resume, Back/Home and resource baseline restored
+PASS: Cycle 1 arabic-shapes: every game opens, settings resume, Back/Home and resource baseline restored
+PASS: Cycle 1 arabic-colors: every game opens, settings resume, Back/Home and resource baseline restored
+PASS: Cycle 2 shapes: every game opens, settings resume, Back/Home and resource baseline restored
+PASS: Cycle 2 letters: every game opens, settings resume, Back/Home and resource baseline restored
+PASS: Cycle 2 numbers: every game opens, settings resume, Back/Home and resource baseline restored
+PASS: Cycle 2 colors: every game opens, settings resume, Back/Home and resource baseline restored
+PASS: Cycle 2 concepts: every game opens, settings resume, Back/Home and resource baseline restored
+PASS: Cycle 2 arabic: every game opens, settings resume, Back/Home and resource baseline restored
+PASS: Cycle 2 arabic-shapes: every game opens, settings resume, Back/Home and resource baseline restored
+PASS: Cycle 2 arabic-colors: every game opens, settings resume, Back/Home and resource baseline restored
+PASS: 78 game mounts; click-to-DOM-plus-two-frames ms: median 48.3, p95 53.4; development browser, automated timings, not physical input latency
+PASS: Long-task API: 0 tasks; max 0.0ms (includes test/browser workload)

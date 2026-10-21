@@ -7,7 +7,7 @@
     "dev": "vite --host 0.0.0.0",
     "build": "vite build",
     "preview": "vite preview --host 0.0.0.0",
-    "test": "node --test src/rounds.test.js src/letters/data/letters.test.js src/letters/narration.test.js src/letters/arcade/arcade.test.js src/letters/interactive/interactive.test.js src/arabic/arabic.test.js src/numbers/numbers.test.js src/colors/colors.test.js src/concepts/concepts.test.js"
+    "test": "node --test src/rounds.test.js src/letters/data/letters.test.js src/letters/narration.test.js src/letters/arcade/arcade.test.js src/letters/interactive/interactive.test.js src/arabic/arabic.test.js src/numbers/numbers.test.js src/colors/colors.test.js src/concepts/concepts.test.js src/arabic/worlds/worlds.test.js src/arabic/recognition/recognition.test.js"
   },
   "dependencies": {
     "react": "^19.1.0",

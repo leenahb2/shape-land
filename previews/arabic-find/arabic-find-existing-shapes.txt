@@ -1,0 +1,7 @@
+PASS: detective seven viewport bounds and exact Shapes reference
+PASS: detective full session, drag/tap, wrong/cancel/outside, musical feedback and no speech
+PASS: monster seven viewport bounds and exact Shapes reference
+PASS: monster full session, drag/tap, wrong/cancel/outside, musical feedback and no speech
+PASS: shadows seven viewport bounds and exact Shapes reference
+PASS: shadows full session, drag/tap, wrong/cancel/outside, musical feedback and no speech
+PASS: Both sound controls mute; no utterances; queued sounds stop; independent Arabic preferences

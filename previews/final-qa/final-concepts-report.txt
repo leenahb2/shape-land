@@ -1,0 +1,16 @@
+PASS: Sixth category integrated; Arabic last; five unified game cards
+PASS: Bear house seven viewports: visible controls, no gameplay scrolling and mapped lines
+PASS: One-pointer resize bonus seven viewports: visible controls, no gameplay scrolling and mapped lines
+PASS: Six paired-size rounds and real slider bonus; wrong/outside/cancel guarded
+PASS: Growing garden seven viewports: visible controls, no gameplay scrolling and mapped lines
+PASS: Flowers, trees and towers grow in multiple actions; hold-to-water and taller comparison
+PASS: Factory with eight objects and four groups seven viewports: visible controls, no gameplay scrolling and mapped lines
+PASS: All four classification rules: colors, shapes, sizes and object categories; moving/frozen belt
+PASS: Mystery windows with six family members seven viewports: visible controls, no gameplay scrolling and mapped lines
+PASS: Family portrait construction seven viewports: visible controls, no gameplay scrolling and mapped lines
+PASS: All six mystery windows, spoken-text introductions and six matching portraits
+PASS: Different picture search seven viewports: visible controls, no gameplay scrolling and mapped lines
+PASS: Same-picture connection board seven viewports: visible controls, no gameplay scrolling and mapped lines
+PASS: Permanent connecting line after resize seven viewports: visible controls, no gameplay scrolling and mapped lines
+PASS: Four explicit differences and four real pointer/tap connections, resize-aligned lines
+PASS: Concept toggles, empty curriculum, restart and Home

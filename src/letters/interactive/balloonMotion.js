@@ -1,5 +1,6 @@
 export function balloonLayout(width,height,count){
- const columns=count>4?3:2,rows=Math.ceil(count/columns),cellW=width/columns,cellH=height/rows;
+ // A shallow smartboard field uses one row so balloons keep large hitboxes.
+ const columns=width>=700&&height<360?count:count>4?3:2,rows=Math.ceil(count/columns),cellW=width/columns,cellH=height/rows;
  const w=Math.max(40,Math.min(165,cellW-20,(cellH-18)*.76)),h=w*1.28;
  return {columns,rows,cellW,cellH,width:w,height:h,driftX:Math.max(0,Math.min(65,(cellW-w)/2-10)),driftY:Math.max(0,Math.min(44,(cellH-h)/2-9))};
 }

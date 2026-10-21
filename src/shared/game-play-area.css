@@ -1,0 +1,101 @@
+/* Shared interaction bounds; no page scale, zoom, or transformed hitboxes. */
+.game-play-area{display:flex;flex-direction:column;flex:1 1 0;min-width:0;min-height:0;width:100%;position:relative}
+@media(min-width:1100px) and (min-height:850px){
+ .game-play-area{position:fixed;inset:auto;left:calc(50% - 371px);top:calc(50dvh + 29.46875px);width:742px;height:306px;max-width:calc(100vw - 32px);flex:none;margin:0;gap:8px;overflow:visible;container-type:size}
+ .game-play-area-reach{top:auto;bottom:58.3984375px}
+ .game-play-area> :is(.nu-quantity-stage,.nu-tower-stage,.nu-fishing-stage,.co-lab-stage,.co-factory-stage,.co-paint-stage,.co-wash-stage,.co-bridge-stage,.cw-stage,.ar-token-board,.ar-connect-board,.ar-doors-board,.move-collection-board,.move-sorting-board,.move-matching-board,.move-tracing-stage,.arc-balloon-sky,.arc-space-scene,.arc-nursery,.ll-answer-area){width:100%;max-width:100%;max-height:100%;margin:0!important;min-height:0;box-sizing:border-box}
+ .game-play-area :is(.nu-supply,.nu-tower-blocks){height:76px;max-height:32%;gap:8px}
+ .game-play-area :is(.nu-piece,.nu-number-block){max-height:76px;border-radius:15px}
+ .game-play-area .nu-dino-character{max-height:160px}
+ .game-play-area .nu-garden-bed{max-height:150px;padding:8px 12px 32px}
+ .game-play-area .nu-count-badge{padding:8px;gap:2px}
+ .game-play-area .nu-count-badge>b{font-size:48px}
+ .game-play-area .nu-count-badge>span{font-size:18px}
+ .game-play-area .nu-tower-plan{margin-bottom:4px}
+ .game-play-area .nu-tower-work{gap:6px}
+ .game-play-area .nu-build-slot{min-height:48px;height:48px}
+ .game-play-area .nu-build-slot>span{font-size:32px}
+ .game-play-area .nu-tower-help{padding-top:4px}
+ .game-play-area .nu-tower-view{min-height:0}
+ .game-play-area .move-heading{position:absolute;bottom:100%;left:0;width:100%;padding:0 0 12px}
+ .game-play-area :is(.move-token-field,.ar-token-grid){max-height:150px;gap:8px}
+ .game-play-area .move-treasure-box{height:85px;width:190px}
+ .game-play-area :is(.move-collection-board,.move-sorting-board){padding:8px 16px;gap:8px}
+ .game-play-area .arc-flying-field{max-height:none;min-height:100px}
+ .game-play-area .arc-letter-choices{margin:0!important;flex:0 0 64px;min-height:64px;gap:10px}
+ .game-play-area .arc-letter-button{height:64px;min-height:64px;font-size:36px}
+ .game-play-area .arc-space-scene{min-height:0}
+ .game-play-area .arc-nursery-heading{padding:0;font-size:12px}
+ .game-play-area .arc-egg-grid{max-height:none;min-height:0;margin:0}
+ .game-play-area .ll-feedback{position:absolute;bottom:100%;width:100%;padding-bottom:12px}
+ .game-play-area .ll-answers{width:100%;max-width:100%;gap:14px}
+ .game-play-area .ll-answer{max-width:132px;max-height:132px;font-size:64px}
+}
+
+@media(min-width:1100px) and (min-height:850px){
+ .game-play-area .move-collection-board{flex-direction:row;align-items:center;gap:16px}
+ .game-play-area .move-collection-board .move-token-field{max-height:264px;height:264px;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
+ .game-play-area .move-collection-board .move-treasure-box{height:120px;width:170px;max-width:26%;margin:0;gap:8px}
+ .game-play-area .co-factory-top{height:48px;padding:0;gap:20px}
+ .game-play-area .co-factory-top b{font-size:24px}
+ .game-play-area .co-factory-top>div>span{font-size:13px}
+ .game-play-area .co-conveyor{min-height:85px;padding:5px 16px}
+ .game-play-area .co-bins{height:110px;margin-top:8px;gap:12px}
+ .game-play-area .co-sort-bin{font-size:16px;gap:3px}
+ .game-play-area .cw-factory{display:grid;grid-template-columns:minmax(0,3fr) minmax(0,2fr);grid-template-rows:48px minmax(0,1fr) 20px;gap:6px 14px}
+ .game-play-area .cw-factory-head{grid-column:1/-1;height:48px;gap:18px;padding:0}
+ .game-play-area .cw-factory-head>b{font-size:20px}
+ .game-play-area .cw-factory-head small{font-size:13px}
+ .game-play-area .cw-conveyor{grid-row:2;grid-column:1;min-height:0;height:100%}
+ .game-play-area .cw-factory-objects{grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+ .game-play-area .cw-sort-bins{grid-row:2;grid-column:2;height:100%;margin:0;gap:8px}
+ .game-play-area .cw-sort-bin{font-size:15px;min-width:0;padding:6px}
+ .game-play-area .cw-factory>.cw-hint{grid-column:1/-1;grid-row:3;margin:0}
+}
+@media(min-width:1100px) and (min-height:850px){
+ .game-play-area .move-collection-board{flex-direction:column;padding:8px 16px;gap:6px}
+ .game-play-area .move-collection-board .move-token-field{width:100%;height:218px;max-height:218px;grid-template-columns:repeat(6,minmax(0,1fr));gap:8px}
+ .game-play-area .move-collection-board .move-treasure-box{height:54px;min-height:54px;width:300px;max-width:80%;margin:0;gap:12px;border-width:3px}
+ .game-play-area .move-treasure-box>b{font-size:32px}
+ .game-play-area .move-sorting-board{flex-direction:row;gap:20px;align-items:center}
+ .game-play-area .move-picture-field{max-height:264px;height:264px;gap:10px}
+ .game-play-area .move-letter-house{width:180px;max-width:28%;height:150px;padding:8px;grid-template-columns:50px 1fr;grid-template-rows:1fr 28px}
+ .game-play-area .move-letter-house>b{font-size:46px}
+ .game-play-area .move-house-count{font-size:14px;padding:4px 8px}
+ .game-play-area .move-matching-board{flex-direction:column;padding:14px 24px;gap:40px;justify-content:space-between}
+ .game-play-area .move-match-column{flex-direction:row;width:100%;height:110px;flex:0 0 110px;gap:18px}
+ .game-play-area .move-match-node{min-width:100px;min-height:100px!important;max-height:110px;font-size:64px}
+}
+@media(min-width:1100px) and (min-height:850px){
+ .game-play-area .nu-tower-blocks{height:104px;max-height:none;grid-template-columns:repeat(6,minmax(0,1fr));grid-auto-rows:minmax(44px,1fr);gap:8px}
+ .game-play-area .nu-tower-blocks .nu-number-block{font-size:32px}
+ .game-play-area .nu-tower-plan{gap:4px;margin-bottom:4px}
+ .game-play-area .nu-tower-plan>span{height:28px;width:28px;font-size:18px}
+ .game-play-area .nu-tower-plan small{font-size:11px}
+ .game-play-area .cw-bears{display:grid;grid-template-columns:minmax(0,3fr) minmax(0,2fr);grid-template-rows:20px minmax(0,1fr) 20px;gap:6px 14px}
+ .game-play-area .cw-bear-homes{grid-column:1;grid-row:2;min-height:0;height:100%;gap:10px}
+ .game-play-area .cw-belongings{grid-column:2;grid-row:2;height:100%;width:100%;margin:0;grid-template-columns:1fr;grid-template-rows:repeat(2,minmax(0,1fr));gap:10px}
+ .game-play-area .cw-bear-belonging{height:50px}
+ .game-play-area .cw-bear-home>b{font-size:18px}
+ .game-play-area .cw-bears>.cw-hint{grid-column:1/-1;grid-row:3;margin:0}
+}
+@media(min-width:1100px) and (min-height:850px){
+ .game-play-area .co-paint-stage{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,3fr);grid-template-rows:minmax(0,1fr) 20px;gap:6px 12px;padding:10px 16px}
+ .game-play-area .co-paint-canvas{grid-column:1;grid-row:1;height:100%;min-height:0}
+ .game-play-area .co-paint-tools{grid-column:2;grid-row:1;align-self:start;height:44px;padding:0;font-size:12px;gap:6px}
+ .game-play-area .co-paint-tools>.ll-button{min-height:44px;font-size:12px;padding:6px}
+ .game-play-area .co-paint-stage>.co-palette{grid-column:2;grid-row:1;align-self:end;grid-template-columns:repeat(2,minmax(0,1fr));grid-auto-rows:minmax(44px,1fr);height:calc(100% - 54px);min-height:0;margin:0;gap:6px}
+ .game-play-area .co-paint-stage .co-palette-color{min-height:44px;flex-direction:column;gap:3px;padding:4px;font-size:12px}
+ .game-play-area .co-paint-stage .co-palette-color>i{width:24px;height:24px;min-width:24px}
+ .game-play-area .co-paint-stage>.co-game-hint{grid-column:1/-1;grid-row:2;padding:0;font-size:12px}
+}
+@media(min-width:1100px) and (min-height:850px){
+ .game-play-area .arc-letter-choices{flex-basis:100px;min-height:100px}
+ .game-play-area .arc-letter-button{height:100px;min-height:100px;font-size:54px}
+}
+@media(min-width:1100px) and (min-height:850px){
+ .game-play-area .arc-cloud-friend{position:absolute;bottom:100%;left:0;width:100%;height:72px;padding:0;pointer-events:none}
+ .game-play-area .arc-cloud-friend svg{height:64px;width:100px}
+ .game-play-area .arc-motion-toolbar{padding:4px 8px;gap:12px;min-height:52px;box-sizing:border-box}
+ .game-play-area .arc-motion-toolbar>span{font-size:12px}
+}

@@ -1,0 +1,175 @@
+=== shapes ===
+PASS: detective seven viewport bounds and exact Shapes reference
+PASS: detective full session, drag/tap, wrong/cancel/outside, musical feedback and no speech
+PASS: monster seven viewport bounds and exact Shapes reference
+PASS: monster full session, drag/tap, wrong/cancel/outside, musical feedback and no speech
+PASS: shadows seven viewport bounds and exact Shapes reference
+PASS: shadows full session, drag/tap, wrong/cancel/outside, musical feedback and no speech
+PASS: Both sound controls mute; no utterances; queued sounds stop; independent Arabic preferences
+
+
+=== arabic-colors ===
+PASS: Colors activated; five themed games; all six categories active
+PASS: Color Lab seven viewport bounds, full scene and no gameplay scroll
+PASS: Lab rejects outside/cancel/wrong recipes; Try Again empties mixture
+PASS: Lab five correct recipe rounds, real pours, tap option and duplicate protection
+PASS: Factory with five bins and ten toys seven viewport bounds, full scene and no gameplay scroll
+PASS: Factory movement, pause/resume and wrong/outside/cancel sorting
+PASS: Factory three complete ten-toy sets, matching bins, drag/tap and prize
+PASS: Painting with six-color palette seven viewport bounds, full scene and no gameplay scroll
+PASS: Painting checks both color and region; cancel/reset preserve progress
+PASS: Three fully colored SVG scenes: twelve region/color tasks using brush and tap
+PASS: Car wash scrub phase seven viewport bounds, full scene and no gameplay scroll
+PASS: Car wash paint phase seven viewport bounds, full scene and no gameplay scroll
+PASS: Three vehicles: real scrub coverage, twelve-tap alternative, correct paint and drive-away
+PASS: Rainbow bridge seven viewport bounds, full scene and no gameplay scroll
+PASS: Three six-color bridges: ordered construction, drag/tap, wrong/cancel and crossing
+PASS: Teacher subsets, empty selection, unsupported recipes and restart
+
+
+=== arabic-shapes ===
+PASS: detective seven viewport bounds and exact Shapes reference
+PASS: detective full session, drag/tap, wrong/cancel/outside, musical feedback and no speech
+PASS: monster seven viewport bounds and exact Shapes reference
+PASS: monster full session, drag/tap, wrong/cancel/outside, musical feedback and no speech
+PASS: shadows seven viewport bounds and exact Shapes reference
+PASS: shadows full session, drag/tap, wrong/cancel/outside, musical feedback and no speech
+PASS: Both sound controls mute; no utterances; queued sounds stop; independent Arabic preferences
+
+
+=== english-colors ===
+PASS: Colors activated; five themed games; all six categories active
+PASS: Color Lab seven viewport bounds, full scene and no gameplay scroll
+PASS: Lab rejects outside/cancel/wrong recipes; Try Again empties mixture
+PASS: Lab five correct recipe rounds, real pours, tap option and duplicate protection
+PASS: Factory with five bins and ten toys seven viewport bounds, full scene and no gameplay scroll
+PASS: Factory movement, pause/resume and wrong/outside/cancel sorting
+PASS: Factory three complete ten-toy sets, matching bins, drag/tap and prize
+PASS: Painting with six-color palette seven viewport bounds, full scene and no gameplay scroll
+PASS: Painting checks both color and region; cancel/reset preserve progress
+PASS: Three fully colored SVG scenes: twelve region/color tasks using brush and tap
+PASS: Car wash scrub phase seven viewport bounds, full scene and no gameplay scroll
+PASS: Car wash paint phase seven viewport bounds, full scene and no gameplay scroll
+PASS: Three vehicles: real scrub coverage, twelve-tap alternative, correct paint and drive-away
+PASS: Rainbow bridge seven viewport bounds, full scene and no gameplay scroll
+PASS: Three six-color bridges: ordered construction, drag/tap, wrong/cancel and crossing
+PASS: Teacher subsets, empty selection, unsupported recipes and restart
+
+
+=== arabic-rewards ===
+PASS: Arabic hub card, All six categories active
+PASS: Hunt six viewport bounds, credit, RTL and target sizes
+PASS: Hunt all five rounds, repeated targets and wrong answers
+PASS: Box six viewport bounds, credit, RTL and target sizes
+PASS: Box rejects wrong/outside/cancelled drops
+PASS: Box all five rounds, drag, tap alternative and surprise
+PASS: Matching six viewport bounds, credit, RTL and target sizes
+PASS: Matching rejects wrong and cancelled lines
+PASS: Permanent matching lines six viewport bounds, credit, RTL and target sizes
+PASS: Matching four complete sets, pointer and tap connections
+PASS: Doors six viewport bounds, credit, RTL and target sizes
+PASS: Doors eight complete rounds, wrong doors closed, animated reveals
+PASS: Empty selection guarded, standalone ه, single-pair matching
+PASS: All four Arabic sessions played musical rewards without speech or recordings; narration controls absent
+PASS: Restart and Home
+
+
+=== arabic-muted ===
+PASS: Arabic hub card, All six categories active
+PASS: Hunt six viewport bounds, credit, RTL and target sizes
+PASS: Hunt all five rounds, repeated targets and wrong answers
+PASS: Box six viewport bounds, credit, RTL and target sizes
+PASS: Box rejects wrong/outside/cancelled drops
+PASS: Box all five rounds, drag, tap alternative and surprise
+PASS: Matching six viewport bounds, credit, RTL and target sizes
+PASS: Matching rejects wrong and cancelled lines
+PASS: Permanent matching lines six viewport bounds, credit, RTL and target sizes
+PASS: Matching four complete sets, pointer and tap connections
+PASS: Doors six viewport bounds, credit, RTL and target sizes
+PASS: Doors eight complete rounds, wrong doors closed, animated reveals
+PASS: Empty selection guarded, standalone ه, single-pair matching
+PASS: All four complete Arabic sessions remained silent despite enabled legacy preferences; audio controls absent
+PASS: Restart and Home
+
+
+=== layout ===
+PASS: Splash: single exact top credit
+PASS: shapes menu seven viewport checks
+PASS: shapes settings seven viewport checks
+PASS: Shape Detective seven viewport checks
+PASS: Hungry Monsters seven viewport checks
+PASS: Shape Shadows seven viewport checks
+PASS: letters menu seven viewport checks
+PASS: letters settings seven viewport checks
+PASS: Letter Detective seven viewport checks
+PASS: Big & Small Matching seven viewport checks
+PASS: Letter & Picture Sorting seven viewport checks
+PASS: Flying Alphabet Balloons seven viewport checks
+PASS: Rocket to the Moon seven viewport checks
+PASS: Mystery Letter Eggs seven viewport checks
+PASS: Letter Collector seven viewport checks
+PASS: Magic Letter Tracing seven viewport checks
+PASS: numbers menu seven viewport checks
+PASS: numbers settings seven viewport checks
+PASS: Feed the Hungry Dino seven viewport checks
+PASS: Build the Number Tower seven viewport checks
+PASS: Magic Number Garden seven viewport checks
+PASS: Number Fishing Adventure seven viewport checks
+PASS: colors menu seven viewport checks
+PASS: colors settings seven viewport checks
+PASS: Magic Color Lab seven viewport checks
+PASS: Rainbow Factory seven viewport checks
+PASS: Paint the Magic World seven viewport checks
+PASS: Color Rescue Car Wash seven viewport checks
+PASS: Rainbow Bridge seven viewport checks
+PASS: concepts menu seven viewport checks
+PASS: concepts settings seven viewport checks
+PASS: The Three Bears’ House seven viewport checks
+PASS: Grow the Magic Garden seven viewport checks
+PASS: Super Sorting Factory seven viewport checks
+PASS: My Family House seven viewport checks
+PASS: Same or Different? seven viewport checks
+PASS: arabic menu seven viewport checks
+PASS: arabic settings seven viewport checks
+PASS: صائد الحروف seven viewport checks
+PASS: وصّل الحرف بالصورة seven viewport checks
+PASS: صندوق الحروف السحري seven viewport checks
+PASS: أبواب المفاجآت seven viewport checks
+PASS: arabic-shapes menu seven viewport checks
+PASS: arabic-shapes settings seven viewport checks
+PASS: صائد الأشكال seven viewport checks
+PASS: أطعم وحش الأشكال seven viewport checks
+PASS: طابق الظل seven viewport checks
+PASS: arabic-colors menu seven viewport checks
+PASS: arabic-colors settings seven viewport checks
+PASS: arabic-colors: unavailable game remains guarded
+PASS: مصنع الألوان seven viewport checks
+PASS: لوّن العالم السحري seven viewport checks
+PASS: مغسلة الألوان seven viewport checks
+PASS: جسر قوس قزح seven viewport checks
+PASS: Magic Letter Tracing seven viewport checks
+PASS: Tracing curriculum restored; default-color reset requires confirmation; Cancel preserves choices
+
+
+=== originals ===
+PASS: single Z target, Medium, Reach Mode, audio off saved
+PASS: independent speech on/off and teacher voice replay
+PASS: Flying Alphabet Balloons wrong-answer retry and all four viewports
+PASS: Flying Alphabet Balloons full 8 rounds, completion animation, and finish layout
+PASS: Flying Alphabet Balloons Play Again, teacher restart, and Back navigation
+PASS: Rocket to the Moon wrong-answer retry and all four viewports
+PASS: Rocket to the Moon full 5 rounds, completion animation, and finish layout
+PASS: Rocket to the Moon Play Again, teacher restart, and Back navigation
+PASS: Mystery Letter Eggs wrong-answer retry and all four viewports
+PASS: Mystery Letter Eggs full 6 rounds, completion animation, and finish layout
+PASS: Mystery Letter Eggs Play Again, teacher restart, and Back navigation
+PASS: Letter Detective correct/incorrect answers and Back navigation
+PASS: Shape Detective original answer interaction and reward
+PASS: Hungry Monsters original answer interaction and reward
+PASS: Shape Shadows original answer interaction and reward
+PASS: empty selection disables all available games; Home works
+
+
+=== arabic-colors-audio ===
+PASS: Arabic Colors correct and incorrect answers play musical effects with no speech or clips
+PASS: Arabic Colors effects and celebration switches mute playback; queued effects stop; narration never starts

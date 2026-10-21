@@ -1,0 +1,58 @@
+/* Device sizing: layout constraints, never transforms on pointer-based games. */
+:is(.ll-play,.arc-main,.move-main,.nu-main,.co-main,.cw-main,.ar-game-main){box-sizing:border-box;min-width:0;max-width:1280px;max-height:820px;margin-inline:auto}
+@media(min-width:1400px){
+ :is(.ll-play,.arc-main,.move-main,.nu-main,.co-main,.cw-main,.ar-game-main){padding-inline:28px;margin-top:auto;margin-bottom:12px}
+ .section-home{max-width:1240px!important}
+ .section-home .adventure-grid>article{padding:22px!important}
+ .section-home .adventure-grid>article>h2{font-size:28px!important}
+ .section-home .adventure-grid>article>button{min-height:46px!important;height:46px;font-size:16px!important}
+ .section-home .adventure-grid>article :is(.ll-game-art,.card-art)>svg{max-height:165px!important}
+ .site-bar-row{max-width:1400px}
+}
+@media(max-width:600px){
+ .section-home{padding:16px max(14px,env(safe-area-inset-left)) 24px!important}
+ .section-home :is(.ll-heading h1,h1,.ar-welcome h1){font-size:clamp(29px,7.6vw,40px)!important;line-height:1.18!important;margin:12px 0!important}
+ .section-home .ar-welcome h1{line-height:1.5!important}
+ .section-home :is(.ll-heading p,.intro,.ar-welcome>p){font-size:14px!important;line-height:1.6!important;margin:10px 0 16px!important}
+ .section-home :is(.ll-selection-note,.ar-home-note){gap:6px;margin-bottom:15px!important;font-size:12px}
+ .site-bar-left,.site-bar-right{gap:5px;flex-wrap:wrap}
+ .site-bar .site-bar-row button{min-width:44px;font-size:11px;padding:7px 8px}
+ :is(.ll-play,.arc-main,.move-main,.nu-main,.co-main,.cw-main,.ar-game-main){padding-inline:12px;max-height:none}
+ .ll-development-note{font-size:12px;line-height:1.6;padding:8px 12px;margin-bottom:12px}
+ .world-directory.ll-hub{padding-inline:14px}
+ .ui-settings{scrollbar-gutter:auto}
+}
+@media(min-width:375px) and (max-width:600px){
+ .section-home .adventure-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:12px!important}
+ .section-home .adventure-grid>article{padding:12px!important;border-radius:20px!important}
+ .section-home .adventure-grid>article>h2{font-size:18px!important;min-height:2.5em;line-height:1.2!important;margin:4px 0 8px!important;letter-spacing:-.2px}
+ .section-home .adventure-grid>article>button{font-size:13px!important;padding:7px!important;border-radius:12px!important;min-height:44px!important;height:44px}
+ .section-home .adventure-grid>article :is(.ll-game-art,.ar-card-art,.card-art){min-height:24px!important;flex-basis:0!important;margin-bottom:3px!important;overflow:hidden}
+ .section-home .adventure-grid>article :is(.ll-game-art,.card-art,.arc-menu-art)>svg{height:72px!important;max-height:72px!important}
+ .section-home .adventure-grid>article .ll-game-art>b{font-size:48px!important}
+ .section-home .adventure-grid>article .ll-lens{font-size:60px}
+ .section-home .adventure-grid>article .ar-card-art>.ar-picture{max-height:64px;max-width:64px}
+ .section-home .adventure-grid>article :is(.ar-art-doors,.ar-art-box){max-height:72px;width:80px}
+ .section-home .adventure-grid>article .ar-art-hunt>span:not(.ar-picture){font-size:48px}
+ .section-home .adventure-grid>article .cw-menu-art>svg{max-height:72px!important}
+ .section-home .adventure-grid>article .nu-menu-tower{max-height:72px;width:58px;gap:2px;overflow:hidden}
+ .section-home .adventure-grid>article .nu-menu-tower b{width:48px;height:22px;font-size:17px}
+ .section-arabic .adventure-grid>article>h2{font-size:18px!important;line-height:1.5!important;min-height:3em}
+}
+@media(max-width:374px){
+ .section-home .adventure-grid{max-width:290px;margin-inline:auto}
+ .world-directory .ll-categories{max-width:290px;margin-inline:auto}
+}
+
+/* Only the original Shapes finale: retain its artwork and reachable actions on short screens. */
+@media(max-height:500px){
+ .app>.complete{padding:8px 12px}
+ .app>.complete .medal{width:44px;height:44px;line-height:36px;border-width:4px;font-size:24px;margin:0 auto 6px;box-shadow:0 5px 0 #e7d9b144}
+ .app>.complete h1{font-size:28px;line-height:1.1;margin:5px 0}
+ .app>.complete h1 br{display:none}
+ .app>.complete h1>span:before{content:" "}
+ .app>.complete p{font-size:12px;line-height:1.4;margin:5px 0}
+ .app>.complete .complete-stars{font-size:22px;line-height:1.1;margin:4px}
+ .app>.complete .completion-buttons{gap:10px}
+ .app>.complete .completion-buttons button{min-height:44px;padding:8px 16px}
+}

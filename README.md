@@ -99,3 +99,7 @@ The sixth category contains The Three Bears' House, Grow the Magic Garden, Super
 ## Final UI refinement
 
 Shared square menu cards, a single universal top creator credit, consistent navigation, and organized teacher dialogs are documented in [DESIGN_POLISH_NOTES.md](DESIGN_POLISH_NOTES.md). Gameplay and audio behavior remain intact, including silent Arabic. The cross-category browser audit is available at `/shape-land/tests/design-polish-check.html`.
+
+## Arabic learning expansion
+
+The hub now groups five English/general categories and three Arabic categories. Arabic Shapes adds three games and twelve shapes; Arabic Colors reuses all five Colors games with eighteen Arabic-only color choices. All Arabic categories use optional non-linguistic reward effects, with instructional narration disabled. See [Arabic world notes](ARABIC_WORLD_NOTES.md) and [browser proof](previews/arabic-worlds/index.html).

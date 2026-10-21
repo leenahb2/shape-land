@@ -1,0 +1,16 @@
+PASS: shapes visible practice/classroom toggles and difficulty work
+PASS: letters visible practice/classroom toggles and difficulty work
+PASS: numbers visible practice/classroom toggles and difficulty work
+PASS: colors visible practice/classroom toggles and difficulty work
+PASS: concepts visible practice/classroom toggles and difficulty work
+PASS: arabic visible practice/classroom toggles and difficulty work
+PASS: arabic-shapes visible practice/classroom toggles and difficulty work
+PASS: arabic-colors visible practice/classroom toggles and difficulty work
+PASS: shapes selections persist through full page reload
+PASS: letters selections persist through full page reload
+PASS: numbers selections persist through full page reload
+PASS: colors selections persist through full page reload
+PASS: concepts selections persist through full page reload
+PASS: arabic selections persist through full page reload
+PASS: arabic-shapes selections persist through full page reload
+PASS: arabic-colors selections persist through full page reload

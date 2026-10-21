@@ -1,0 +1,20 @@
+
+> shape-land@1.0.0 build
+> vite build
+
+vite v7.3.7 building client environment for production...
+transforming...
+✓ 138 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                            0.59 kB │ gzip:   0.37 kB
+dist/assets/ArabicFindGame-CUOOBo9v.css    1.51 kB │ gzip:   0.68 kB
+dist/assets/worlds-BGJP7RoC.css            1.61 kB │ gzip:   0.59 kB
+dist/assets/index-DkQcZ6_U.css           234.62 kB │ gzip:  46.20 kB
+dist/assets/ArabicColors-C1_gSiaA.js       3.38 kB │ gzip:   1.54 kB
+dist/assets/worlds-CEh83npk.js             3.82 kB │ gzip:   1.70 kB
+dist/assets/ArabicShapes-t2-U7fT5.js       7.69 kB │ gzip:   3.11 kB
+dist/assets/ArabicFindGame-DhMDepMS.js    12.61 kB │ gzip:   5.22 kB
+dist/assets/ArabicWorld-8Upat0fp.js       24.05 kB │ gzip:   8.20 kB
+dist/assets/index-CnhmzNKg.js            486.44 kB │ gzip: 154.18 kB
+✓ built in 916ms

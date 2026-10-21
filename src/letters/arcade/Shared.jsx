@@ -1,3 +1,4 @@
+import GamePlayArea from '../../shared/GamePlayArea';
 import AppBar from '../../shared/AppBar';
 import React from 'react';
 import {ARCADE_GAMES,audioPreferences} from './rounds.js';
@@ -8,7 +9,7 @@ export function ArcadeFrame({type,play,settings,home,games,restart,openSettings,
    <main className="arc-main">
      <div className="arc-progress"><span>{play.done?'Adventure complete':`${type==='rocket'?'Stage':'Round'} ${play.index+1} of ${play.total}`}</span><div role="progressbar" aria-label="Arcade progress" aria-valuemin="0" aria-valuemax={play.total} aria-valuenow={play.progress}>{Array.from({length:play.total},(_,i)=><b key={i} className={i<play.progress?'arc-earned':''}>★</b>)}</div></div>
      {!play.done&&<section className="arc-instructions"><h1>{play.phrase}</h1><button className="ll-button arc-replay" disabled={!prefs.speech} onClick={play.replay}>♫ Replay Instruction</button>{!window.speechSynthesis&&<small>Voice is unavailable. Follow the written question.</small>}</section>}
-     {children}
+     <GamePlayArea reach={settings.reach}>{children}</GamePlayArea>
      {play.done?<div className="arc-finish-actions"><button className="ll-button ll-primary" onClick={restart}>Play Again ↻</button><button className="ll-button" onClick={games}>Back to Games →</button></div>:<div className={`arc-feedback ${play.reward?'arc-positive':''}`} role="status" aria-live="polite">{play.reward?`★ ${play.praise}`:play.wrong?'Try again! Your adventure is waiting.':'No hurry, little explorer. Tap your answer.'}</div>}
    </main>
    {(play.reward||play.done)&&<Celebration type={type} major={play.done} key={`${play.index}-${play.done}`}/>}

@@ -57,3 +57,16 @@ test('train removal is explicit and new case preference preserves all prior sett
  const pref=readPreferences({getItem:()=>JSON.stringify({letters:['T'],difficulty:'medium',sound:false,reach:true,collectorCase:'mixed',arcadeAudio:{speech:true,effects:false,cheering:true}})});
  assert.equal(pref.collectorCase,'mixed');assert.deepEqual(pref.letters,['T']);assert.equal(pref.sound,false);assert.equal(pref.reach,true);assert.equal(pref.arcadeAudio.speech,true);
 });
+
+test('Shapes-sized smartboard balloon field keeps large, separate moving hitboxes',()=>{
+ for(const count of [4,6])for(const height of [220,254,306]){
+  const layout=balloonLayout(742,height,count);
+  assert.equal(layout.rows,1);
+  assert.ok(layout.width>=100&&layout.height>=100);
+  for(let tick=0;tick<120;tick++){
+   const boxes=Array.from({length:count},(_,i)=>({...balloonPosition(layout,i,tick/4),width:layout.width,height:layout.height}));
+   for(const b of boxes){assert.ok(b.x>=0&&b.y>=0);assert.ok(b.x+b.width<=742&&b.y+b.height<=height);}
+   for(let i=1;i<count;i++)assert.ok(boxes[i-1].x+boxes[i-1].width<=boxes[i].x);
+  }
+ }
+});

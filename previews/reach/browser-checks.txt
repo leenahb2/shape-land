@@ -1,0 +1,233 @@
+=== reference ===
+PASS: {"reach":false,"game":0,".play-zone":{"x":96,"y":371.34375,"width":1728,"height":696.65625},".matching-area":{"x":96,"y":643.46875,"width":1728,"height":158},".shape-tray":{"x":662,"y":643.46875,"width":596,"height":158}}
+PASS: {"reach":false,"game":1,".play-zone":{"x":96,"y":371.34375,"width":1728,"height":696.65625},".matching-area":{"x":96,"y":569.46875,"width":1728,"height":306},".shape-tray":{"x":662,"y":717.46875,"width":596,"height":158},".destinations":{"x":663,"y":569.46875,"width":594,"height":132}}
+PASS: {"reach":false,"game":2,".play-zone":{"x":96,"y":371.34375,"width":1728,"height":696.65625},".matching-area":{"x":96,"y":569.46875,"width":1728,"height":306},".shape-tray":{"x":589,"y":717.46875,"width":742,"height":158},".destinations":{"x":590,"y":569.46875,"width":740,"height":132}}
+PASS: {"reach":true,"game":0,".play-zone":{"x":96,"y":321.09375,"width":1728,"height":746.90625},".matching-area":{"x":96,"y":863.6015625,"width":1728,"height":158},".shape-tray":{"x":662,"y":863.6015625,"width":596,"height":158}}
+PASS: {"reach":true,"game":1,".play-zone":{"x":96,"y":321.09375,"width":1728,"height":746.90625},".matching-area":{"x":96,"y":715.6015625,"width":1728,"height":306},".shape-tray":{"x":662,"y":863.6015625,"width":596,"height":158},".destinations":{"x":663,"y":715.6015625,"width":594,"height":132}}
+PASS: {"reach":true,"game":2,".play-zone":{"x":96,"y":321.09375,"width":1728,"height":746.90625},".matching-area":{"x":96,"y":715.6015625,"width":1728,"height":306},".shape-tray":{"x":589,"y":863.6015625,"width":742,"height":158},".destinations":{"x":590,"y":715.6015625,"width":740,"height":132}}
+
+
+=== area ===
+PASS: Splash: single exact top credit
+PASS: shapes menu seven viewport checks
+PASS: shapes settings seven viewport checks
+PASS: Shape Detective {"zone":{"x":96,"y":371.34375,"width":1728,"height":696.65625},"matching":{"x":96,"y":643.46875,"width":1728,"height":158},"tray":{"x":662,"y":643.46875,"width":596,"height":158},"main":null}
+PASS: Shape Detective seven viewport checks
+PASS: Hungry Monsters {"zone":{"x":96,"y":371.34375,"width":1728,"height":696.65625},"matching":{"x":96,"y":569.46875,"width":1728,"height":306},"tray":{"x":662,"y":717.46875,"width":596,"height":158},"main":null}
+PASS: Hungry Monsters seven viewport checks
+PASS: Shape Shadows {"zone":{"x":96,"y":371.34375,"width":1728,"height":696.65625},"matching":{"x":96,"y":569.46875,"width":1728,"height":306},"tray":{"x":589,"y":717.46875,"width":742,"height":158},"main":null}
+PASS: Shape Shadows seven viewport checks
+PASS: letters menu seven viewport checks
+PASS: letters settings seven viewport checks
+PASS: Letter Detective {"zone":null,"matching":null,"tray":null,"main":{"x":320,"y":248,"width":1280,"height":820}}
+PASS: Letter Detective seven viewport checks
+PASS: Letter Detective reference matches with Reach off/on
+PASS: Big & Small Matching {"zone":null,"matching":null,"tray":null,"main":{"x":320,"y":248,"width":1280,"height":820}}
+PASS: Big & Small Matching seven viewport checks
+PASS: Big & Small Matching reference matches with Reach off/on
+PASS: Letter & Picture Sorting {"zone":null,"matching":null,"tray":null,"main":{"x":320,"y":248,"width":1280,"height":820}}
+PASS: Letter & Picture Sorting seven viewport checks
+PASS: Letter & Picture Sorting reference matches with Reach off/on
+PASS: Flying Alphabet Balloons {"zone":null,"matching":null,"tray":null,"main":{"x":320,"y":248,"width":1280,"height":820}}
+PASS: Flying Alphabet Balloons seven viewport checks
+PASS: Flying Alphabet Balloons reference matches with Reach off/on
+PASS: Rocket to the Moon {"zone":null,"matching":null,"tray":null,"main":{"x":320,"y":248,"width":1280,"height":820}}
+PASS: Rocket to the Moon seven viewport checks
+PASS: Rocket to the Moon reference matches with Reach off/on
+PASS: Mystery Letter Eggs {"zone":null,"matching":null,"tray":null,"main":{"x":320,"y":248,"width":1280,"height":820}}
+PASS: Mystery Letter Eggs seven viewport checks
+PASS: Mystery Letter Eggs reference matches with Reach off/on
+PASS: Letter Collector {"zone":null,"matching":null,"tray":null,"main":{"x":320,"y":248,"width":1280,"height":820}}
+PASS: Letter Collector seven viewport checks
+PASS: Letter Collector reference matches with Reach off/on
+PASS: Magic Letter Tracing {"zone":null,"matching":null,"tray":null,"main":{"x":320,"y":248,"width":1280,"height":820}}
+PASS: Magic Letter Tracing seven viewport checks
+PASS: Magic Letter Tracing reference matches with Reach off/on
+PASS: numbers menu seven viewport checks
+PASS: numbers settings seven viewport checks
+PASS: Feed the Hungry Dino {"zone":null,"matching":null,"tray":null,"main":{"x":320,"y":248,"width":1280,"height":820}}
+PASS: Feed the Hungry Dino seven viewport checks
+PASS: Feed the Hungry Dino reference matches with Reach off/on
+PASS: Build the Number Tower {"zone":null,"matching":null,"tray":null,"main":{"x":320,"y":248,"width":1280,"height":820}}
+PASS: Build the Number Tower seven viewport checks
+PASS: Build the Number Tower reference matches with Reach off/on
+PASS: Magic Number Garden {"zone":null,"matching":null,"tray":null,"main":{"x":320,"y":248,"width":1280,"height":820}}
+PASS: Magic Number Garden seven viewport checks
+PASS: Magic Number Garden reference matches with Reach off/on
+PASS: Number Fishing Adventure {"zone":null,"matching":null,"tray":null,"main":{"x":320,"y":248,"width":1280,"height":820}}
+PASS: Number Fishing Adventure seven viewport checks
+PASS: Number Fishing Adventure reference matches with Reach off/on
+PASS: colors menu seven viewport checks
+PASS: colors settings seven viewport checks
+PASS: Magic Color Lab {"zone":null,"matching":null,"tray":null,"main":{"x":320,"y":248,"width":1280,"height":820}}
+PASS: Magic Color Lab seven viewport checks
+PASS: Magic Color Lab reference matches with Reach off/on
+PASS: Rainbow Factory {"zone":null,"matching":null,"tray":null,"main":{"x":320,"y":248,"width":1280,"height":820}}
+PASS: Rainbow Factory seven viewport checks
+PASS: Rainbow Factory reference matches with Reach off/on
+PASS: Paint the Magic World {"zone":null,"matching":null,"tray":null,"main":{"x":320,"y":248,"width":1280,"height":820}}
+PASS: Paint the Magic World seven viewport checks
+PASS: Paint the Magic World reference matches with Reach off/on
+PASS: Color Rescue Car Wash {"zone":null,"matching":null,"tray":null,"main":{"x":320,"y":248,"width":1280,"height":820}}
+PASS: Color Rescue Car Wash seven viewport checks
+PASS: Color Rescue Car Wash reference matches with Reach off/on
+PASS: Rainbow Bridge {"zone":null,"matching":null,"tray":null,"main":{"x":320,"y":248,"width":1280,"height":820}}
+PASS: Rainbow Bridge seven viewport checks
+PASS: Rainbow Bridge reference matches with Reach off/on
+PASS: concepts menu seven viewport checks
+PASS: concepts settings seven viewport checks
+PASS: The Three Bears’ House {"zone":null,"matching":null,"tray":null,"main":{"x":320,"y":248,"width":1280,"height":820}}
+PASS: The Three Bears’ House seven viewport checks
+PASS: The Three Bears’ House reference matches with Reach off/on
+PASS: Grow the Magic Garden {"zone":null,"matching":null,"tray":null,"main":{"x":320,"y":248,"width":1280,"height":820}}
+PASS: Grow the Magic Garden seven viewport checks
+PASS: Grow the Magic Garden reference matches with Reach off/on
+PASS: Super Sorting Factory {"zone":null,"matching":null,"tray":null,"main":{"x":320,"y":248,"width":1280,"height":820}}
+PASS: Super Sorting Factory seven viewport checks
+PASS: Super Sorting Factory reference matches with Reach off/on
+PASS: My Family House {"zone":null,"matching":null,"tray":null,"main":{"x":320,"y":248,"width":1280,"height":820}}
+PASS: My Family House seven viewport checks
+PASS: My Family House reference matches with Reach off/on
+PASS: Same or Different? {"zone":null,"matching":null,"tray":null,"main":{"x":320,"y":248,"width":1280,"height":820}}
+PASS: Same or Different? seven viewport checks
+PASS: Same or Different? reference matches with Reach off/on
+PASS: arabic menu seven viewport checks
+PASS: arabic settings seven viewport checks
+PASS: صائد الحروف {"zone":null,"matching":null,"tray":null,"main":{"x":320,"y":248,"width":1280,"height":820}}
+PASS: صائد الحروف seven viewport checks
+PASS: صائد الحروف reference matches with Reach off/on
+PASS: وصّل الحرف بالصورة {"zone":null,"matching":null,"tray":null,"main":{"x":320,"y":248,"width":1280,"height":820}}
+PASS: وصّل الحرف بالصورة seven viewport checks
+PASS: وصّل الحرف بالصورة reference matches with Reach off/on
+PASS: صندوق الحروف السحري {"zone":null,"matching":null,"tray":null,"main":{"x":320,"y":248,"width":1280,"height":820}}
+PASS: صندوق الحروف السحري seven viewport checks
+PASS: صندوق الحروف السحري reference matches with Reach off/on
+PASS: أبواب المفاجآت {"zone":null,"matching":null,"tray":null,"main":{"x":320,"y":248,"width":1280,"height":820}}
+PASS: أبواب المفاجآت seven viewport checks
+PASS: أبواب المفاجآت reference matches with Reach off/on
+PASS: Magic Letter Tracing {"zone":null,"matching":null,"tray":null,"main":{"x":320,"y":248,"width":1280,"height":820}}
+PASS: Magic Letter Tracing seven viewport checks
+PASS: Tracing curriculum restored; default-color reset requires confirmation; Cancel preserves choices
+
+
+=== english ===
+PASS: Train removed; selected A B C S T, Medium, mixed case, Reach Mode
+PASS: Collector teacher restart
+PASS: Collector bounds at five viewports
+PASS: Collector rejects wrong/outside/cancelled drops
+PASS: Collector full 5 rounds, drag + tap, exact counts and completion
+PASS: Matching teacher restart
+PASS: Matching bounds at five viewports
+PASS: Matching rejects wrong/cancelled connections
+PASS: Connected line resize bounds at five viewports
+PASS: Matching full 4 sets, real pointer lines, tap alternative and completion
+PASS: Picture sorting teacher restart
+PASS: Picture sorting bounds at five viewports
+PASS: Picture sorting rejects wrong and cancelled drops
+PASS: Picture sorting full 5 rounds, illustrated objects and completion
+PASS: Tracing teacher restart
+PASS: Tracing bounds at five viewports
+PASS: Tracing rejects endpoint taps/teleports; demonstration and cancellation award no completion
+PASS: Tracing completed all ordered strokes for A B C S T, with pen lifts and Next
+PASS: Moving balloons bounds at five viewports
+PASS: Balloon hitboxes travel, stay in bounds, pause/resume, freeze on touch, and cancel safely
+PASS: Z stays playable elsewhere, one-pair matching works, X final-sound question is explicit
+PASS: Home and retained hub navigation
+
+
+=== numbers ===
+PASS: Numbers activated, unified four-card menu, Colors also active
+PASS: dino seven viewport bounds and touch targets
+PASS: dino rejects outside/cancelled/secondary pointer and wrong zero input
+PASS: dino all five rounds, exact quantities including zero, duplicate/overcount protection, drag and tap
+PASS: dino quantity 10 seven viewport bounds and touch targets
+PASS: dino rejects outside/cancelled/secondary pointer and wrong zero input
+PASS: dino ten-object round completed
+PASS: garden seven viewport bounds and touch targets
+PASS: garden rejects outside/cancelled/secondary pointer and wrong zero input
+PASS: garden all five rounds, exact quantities including zero, duplicate/overcount protection, drag and tap
+PASS: garden quantity 10 seven viewport bounds and touch targets
+PASS: garden rejects outside/cancelled/secondary pointer and wrong zero input
+PASS: garden ten-object round completed
+PASS: Tower up to ten blocks seven viewport bounds and touch targets
+PASS: Tower three full sequences, missing-number challenge, wrong/cancel protection and fixed reachable slot
+PASS: Tower subset validation and single-number support
+PASS: Fishing seven viewport bounds and touch targets
+PASS: Fish movement, pause/resume, wrong/outside/cancelled hook validated
+PASS: Fishing six full rounds, controlled moving hook, tap-to-move + separate lift, catches and bucket finale
+PASS: Empty selection guard, explicit zero action, teacher restart, Games and Home
+
+
+=== colors ===
+PASS: Colors activated; five themed games; all six categories active
+PASS: Color Lab seven viewport bounds, full scene and no gameplay scroll
+PASS: Lab rejects outside/cancel/wrong recipes; Try Again empties mixture
+PASS: Lab five correct recipe rounds, real pours, tap option and duplicate protection
+PASS: Factory with five bins and ten toys seven viewport bounds, full scene and no gameplay scroll
+PASS: Factory movement, pause/resume and wrong/outside/cancel sorting
+PASS: Factory three complete ten-toy sets, matching bins, drag/tap and prize
+PASS: Painting with six-color palette seven viewport bounds, full scene and no gameplay scroll
+PASS: Painting checks both color and region; cancel/reset preserve progress
+PASS: Three fully colored SVG scenes: twelve region/color tasks using brush and tap
+PASS: Car wash scrub phase seven viewport bounds, full scene and no gameplay scroll
+PASS: Car wash paint phase seven viewport bounds, full scene and no gameplay scroll
+PASS: Three vehicles: real scrub coverage, twelve-tap alternative, correct paint and drive-away
+PASS: Rainbow bridge seven viewport bounds, full scene and no gameplay scroll
+PASS: Three six-color bridges: ordered construction, drag/tap, wrong/cancel and crossing
+PASS: Teacher subsets, empty selection, unsupported recipes and restart
+
+
+=== arabic ===
+PASS: Arabic hub card, All six categories active
+PASS: Hunt six viewport bounds, credit, RTL and target sizes
+PASS: Hunt all five rounds, repeated targets and wrong answers
+PASS: Box six viewport bounds, credit, RTL and target sizes
+PASS: Box rejects wrong/outside/cancelled drops
+PASS: Box all five rounds, drag, tap alternative and surprise
+PASS: Matching six viewport bounds, credit, RTL and target sizes
+PASS: Matching rejects wrong and cancelled lines
+PASS: Permanent matching lines six viewport bounds, credit, RTL and target sizes
+PASS: Matching four complete sets, pointer and tap connections
+PASS: Doors six viewport bounds, credit, RTL and target sizes
+PASS: Doors eight complete rounds, wrong doors closed, animated reveals
+PASS: Empty selection guarded, standalone ه, single-pair matching
+PASS: All four complete Arabic sessions remained silent despite enabled legacy preferences; audio controls absent
+PASS: Restart and Home
+
+
+=== concepts ===
+PASS: Sixth category integrated; Arabic last; five unified game cards
+PASS: Bear house seven viewports: visible controls, no gameplay scrolling and mapped lines
+PASS: One-pointer resize bonus seven viewports: visible controls, no gameplay scrolling and mapped lines
+PASS: Six paired-size rounds and real slider bonus; wrong/outside/cancel guarded
+PASS: Growing garden seven viewports: visible controls, no gameplay scrolling and mapped lines
+PASS: Flowers, trees and towers grow in multiple actions; hold-to-water and taller comparison
+PASS: Factory with eight objects and four groups seven viewports: visible controls, no gameplay scrolling and mapped lines
+PASS: All four classification rules: colors, shapes, sizes and object categories; moving/frozen belt
+PASS: Mystery windows with six family members seven viewports: visible controls, no gameplay scrolling and mapped lines
+PASS: Family portrait construction seven viewports: visible controls, no gameplay scrolling and mapped lines
+PASS: All six mystery windows, spoken-text introductions and six matching portraits
+PASS: Different picture search seven viewports: visible controls, no gameplay scrolling and mapped lines
+PASS: Same-picture connection board seven viewports: visible controls, no gameplay scrolling and mapped lines
+PASS: Permanent connecting line after resize seven viewports: visible controls, no gameplay scrolling and mapped lines
+PASS: Four explicit differences and four real pointer/tap connections, resize-aligned lines
+PASS: Concept toggles, empty curriculum, restart and Home
+
+
+=== arcade ===
+PASS: single Z target, Medium, Reach Mode, audio off saved
+PASS: independent speech on/off and teacher voice replay
+PASS: Flying Alphabet Balloons wrong-answer retry and all four viewports
+PASS: Flying Alphabet Balloons full 8 rounds, completion animation, and finish layout
+PASS: Flying Alphabet Balloons Play Again, teacher restart, and Back navigation
+PASS: Rocket to the Moon wrong-answer retry and all four viewports
+PASS: Rocket to the Moon full 5 rounds, completion animation, and finish layout
+PASS: Rocket to the Moon Play Again, teacher restart, and Back navigation
+PASS: Mystery Letter Eggs wrong-answer retry and all four viewports
+PASS: Mystery Letter Eggs full 6 rounds, completion animation, and finish layout
+PASS: Mystery Letter Eggs Play Again, teacher restart, and Back navigation
+PASS: Letter Detective correct/incorrect answers and Back navigation
+PASS: Shape Detective original answer interaction and reward
+PASS: Hungry Monsters original answer interaction and reward
+PASS: Shape Shadows original answer interaction and reward
+PASS: empty selection disables all available games; Home works

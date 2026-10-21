@@ -8,3 +8,12 @@
 .ll-heading h1:focus{outline:none}
 @media(max-height:500px){.ll-game-page .ll-nav{min-height:56px;padding-top:4px;padding-bottom:4px}.ll-game-page .ll-nav .ll-button{min-height:44px;padding:7px 14px}.ll-game-progress{font-size:11px}.ll-game-progress b{font-size:16px}.ll-prompt{position:relative;padding-top:4px}.ll-prompt h1{font-size:24px;margin:4px}.ll-prompt>small{display:none}.ll-target{font-size:52px;display:inline-block;vertical-align:middle;margin:0 14px 0 0}.ll-replay{min-height:44px;padding:6px 12px}.ll-feedback{min-height:25px;padding:2px}.ll-answer{height:clamp(76px,25vh,120px);font-size:66px}.ll-answers{grid-template-columns:repeat(var(--choices),minmax(0,1fr));gap:10px;margin:3px auto}.ll-answers.ll-picture{grid-template-columns:repeat(var(--choices),minmax(0,1fr))}.ll-picture .ll-answer>span{font-size:16px}.ll-play{padding-bottom:8px}.ll-answer-area{padding:0}.ll-reach .ll-answer-area{padding:0}}
 .ll-page{animation-name:ll-page-enter}@keyframes ll-page-enter{from{opacity:0}to{opacity:1}}
+
+/* Shared bilingual category groups. */
+.learning-group{margin-top:30px}
+.learning-group>h2{font:800 20px/1.5 'Nunito',system-ui,sans-serif;display:flex;align-items:center;gap:18px;color:#7e688d;margin:0 0 18px}
+.learning-group>h2:after{content:'';height:1px;flex:1;background:#e4d7e6}
+.learning-group-ar>h2{font-family:Tajawal,Tahoma,Arial,sans-serif}
+.world-directory .ar-learning-card h2{font-family:Tajawal,Tahoma,Arial,sans-serif;letter-spacing:0;line-height:1.5}
+.ar-learning-card{font-family:Tajawal,Tahoma,Arial,sans-serif}
+@media(max-width:600px){.learning-group>h2{font-size:18px}}

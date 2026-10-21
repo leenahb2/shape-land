@@ -1,0 +1,9 @@
+import {LETTERS} from '../model.js';
+import {ARABIC_SHAPES,ARABIC_COLORS,SHAPE_DEFINITE} from '../worlds/data.js';
+import {ARABIC_COLOR_NAMES} from '../../colors/arabicPalette.js';
+import {recognitionRounds,shuffleRecognition} from '../../shared/recognitionRounds.js';
+const SIMILAR=['بتثن','جحخ','دذ','رز','سش','صض','طظ','عغ','فق','هوت','ألك'];
+export const FIND_TITLES={letters:'أوجد الحرف',shapes:'أوجد الشكل',colors:'أوجد اللون'};
+export function findItems(kind){return kind==='letters'?LETTERS.map(l=>({id:l.char,name:l.name})):kind==='shapes'?ARABIC_SHAPES:ARABIC_COLORS.map(c=>({...c,name:ARABIC_COLOR_NAMES[c.id]}));}
+export function findInstruction(kind,target){const name=findItems(kind).find(x=>x.id===target)?.name;return kind==='letters'?`أوجد حرف ${name}!`:kind==='shapes'?`أوجد ${SHAPE_DEFINITE[target]}!`:`أوجد اللون ${({'light-blue':'الأزرق الفاتح','dark-blue':'الأزرق الداكن','light-green':'الأخضر الفاتح','dark-green':'الأخضر الداكن'})[target]||'ال'+name}!`;}
+export function makeFindRounds(kind,settings,rng=Math.random){const pool=findItems(kind).map(x=>x.id);return recognitionRounds({targets:settings[kind]||[],pool,rng,choices:4,rounds:10,distractorOrder:kind==='letters'?(target,random)=>{const group=SIMILAR.find(g=>g.includes(target))||'',similar=pool.filter(c=>group.includes(c)),different=pool.filter(c=>!group.includes(c));return settings.difficulty==='medium'?[...shuffleRecognition(similar,random),...shuffleRecognition(different,random)]:[...shuffleRecognition(different,random),...shuffleRecognition(similar,random)];}:kind==='colors'?(target,random)=>{const distinct=['red','blue','yellow','green','purple','black','white'].filter(id=>id!==target&&!((target.includes('blue')&&id==='blue')||(target.includes('green')&&id==='green')));return shuffleRecognition(distinct,random);}:undefined});}

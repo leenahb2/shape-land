@@ -1,0 +1,15 @@
+.ar-color-world,.ar-shape-world,.ar-learning-card{font-family:Tajawal,Tahoma,Arial,sans-serif}
+.ar-color-world :is(h1,h2,h3,button,.site-bar-title,.ll-heading),.ar-shape-world :is(h1,h2,h3,button,.site-bar-title,.ll-heading){font-family:Tajawal,Tahoma,Arial,sans-serif;letter-spacing:0}
+.ar-color-world :is(.co-conveyor,.co-paint-canvas,.co-vehicle-canvas,.co-bridge-landscape){direction:ltr}
+.ar-shape-world .game-play-area{align-items:center;justify-content:center}
+.ar-shape-world .shape-tile span{font-family:Tajawal,Tahoma,Arial,sans-serif;line-height:1.4}
+.ar-shape-world .instruction p{font-size:15px;color:#887590}
+.ar-shape-world .monster-label{line-height:1.4;font-family:Tajawal,Tahoma,Arial,sans-serif}
+.ar-world .co-color-picker>button>i{display:block;width:32px;height:32px;border-radius:50%;border:1px solid #9f8aa1}
+.ar-world .co-color-picker>button{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;padding:8px;position:relative}
+.ar-world .shape-picker>button{display:flex;flex-direction:column;align-items:center;gap:5px}
+.ar-world .shape-picker>button>svg{width:46px;height:46px}
+.ar-world .shape-picker>button>span{position:static;font-size:12px}
+.ar-world .ar-settings-head button{min-height:44px;padding:7px 12px;border-radius:12px;background:#f1eaf6;border:1px solid #dfd2e6}
+.ar-color-world .co-instructions h1{line-height:1.5}
+@media(max-width:600px){.learning-group>h2{font-size:18px}.ar-shape-world .instruction h1{line-height:1.5}.ar-color-world .co-instructions h1{font-size:24px}.ar-color-world .co-palette-color{font-family:Tajawal,Tahoma,Arial,sans-serif}}

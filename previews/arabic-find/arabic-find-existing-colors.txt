@@ -1,0 +1,16 @@
+PASS: Colors activated; five themed games; all six categories active
+PASS: Color Lab seven viewport bounds, full scene and no gameplay scroll
+PASS: Lab rejects outside/cancel/wrong recipes; Try Again empties mixture
+PASS: Lab five correct recipe rounds, real pours, tap option and duplicate protection
+PASS: Factory with five bins and ten toys seven viewport bounds, full scene and no gameplay scroll
+PASS: Factory movement, pause/resume and wrong/outside/cancel sorting
+PASS: Factory three complete ten-toy sets, matching bins, drag/tap and prize
+PASS: Painting with six-color palette seven viewport bounds, full scene and no gameplay scroll
+PASS: Painting checks both color and region; cancel/reset preserve progress
+PASS: Three fully colored SVG scenes: twelve region/color tasks using brush and tap
+PASS: Car wash scrub phase seven viewport bounds, full scene and no gameplay scroll
+PASS: Car wash paint phase seven viewport bounds, full scene and no gameplay scroll
+PASS: Three vehicles: real scrub coverage, twelve-tap alternative, correct paint and drive-away
+PASS: Rainbow bridge seven viewport bounds, full scene and no gameplay scroll
+PASS: Three six-color bridges: ordered construction, drag/tap, wrong/cancel and crossing
+PASS: Teacher subsets, empty selection, unsupported recipes and restart

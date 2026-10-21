@@ -1,0 +1,5 @@
+PASS: Original Shapes celebration waits while Teacher Settings is open
+PASS: Detective full completion, seven completion viewports and return navigation
+PASS: Monsters full completion, seven completion viewports and return navigation
+PASS: Shadows full completion, seven completion viewports and return navigation
+PASS: Letter Detective ten full rounds and seven completion viewports

@@ -1,0 +1,58 @@
+PASS: Splash: single exact top credit
+PASS: shapes menu seven viewport checks
+PASS: shapes settings seven viewport checks
+PASS: Shape Detective seven viewport checks
+PASS: Hungry Monsters seven viewport checks
+PASS: Shape Shadows seven viewport checks
+PASS: letters menu seven viewport checks
+PASS: letters settings seven viewport checks
+PASS: Letter Detective seven viewport checks
+PASS: Big & Small Matching seven viewport checks
+PASS: Letter & Picture Sorting seven viewport checks
+PASS: Flying Alphabet Balloons seven viewport checks
+PASS: Rocket to the Moon seven viewport checks
+PASS: Mystery Letter Eggs seven viewport checks
+PASS: Letter Collector seven viewport checks
+PASS: letters: unavailable game remains guarded
+PASS: numbers menu seven viewport checks
+PASS: numbers settings seven viewport checks
+PASS: Feed the Hungry Dino seven viewport checks
+PASS: Build the Number Tower seven viewport checks
+PASS: Magic Number Garden seven viewport checks
+PASS: Number Fishing Adventure seven viewport checks
+PASS: colors menu seven viewport checks
+PASS: colors settings seven viewport checks
+PASS: Magic Color Lab seven viewport checks
+PASS: Rainbow Factory seven viewport checks
+PASS: Paint the Magic World seven viewport checks
+PASS: Color Rescue Car Wash seven viewport checks
+PASS: Rainbow Bridge seven viewport checks
+PASS: concepts menu seven viewport checks
+PASS: concepts settings seven viewport checks
+PASS: The Three Bears’ House seven viewport checks
+PASS: Grow the Magic Garden seven viewport checks
+PASS: Super Sorting Factory seven viewport checks
+PASS: My Family House seven viewport checks
+PASS: Same or Different? seven viewport checks
+PASS: arabic menu seven viewport checks
+PASS: arabic settings seven viewport checks
+PASS: صائد الحروف seven viewport checks
+PASS: وصّل الحرف بالصورة seven viewport checks
+PASS: صندوق الحروف السحري seven viewport checks
+PASS: أبواب المفاجآت seven viewport checks
+PASS: أوجد الحرف seven viewport checks
+PASS: arabic-shapes menu seven viewport checks
+PASS: arabic-shapes settings seven viewport checks
+PASS: أوجد الشكل seven viewport checks
+PASS: أطعم وحش الأشكال seven viewport checks
+PASS: طابق الظل seven viewport checks
+PASS: arabic-colors menu seven viewport checks
+PASS: arabic-colors settings seven viewport checks
+PASS: أوجد اللون seven viewport checks
+PASS: arabic-colors: unavailable game remains guarded
+PASS: مصنع الألوان seven viewport checks
+PASS: لوّن العالم السحري seven viewport checks
+PASS: مغسلة الألوان seven viewport checks
+PASS: جسر قوس قزح seven viewport checks
+PASS: Magic Letter Tracing seven viewport checks
+PASS: Tracing curriculum restored; default-color reset requires confirmation; Cancel preserves choices
